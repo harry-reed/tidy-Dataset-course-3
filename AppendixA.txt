@@ -1,595 +1,600 @@
-Orig_COL	Previous_Name			IsMeanVar	IsStdevVar	ShorterVariableName		Units
---------	--------------------------	---------	----------	----------------------		-------
-1 		tBodyAcc-mean()-X 		TRUE 		FALSE 		tBodAc_mean_X			grvity (g)
-2 		tBodyAcc-mean()-Y 		TRUE 		FALSE 		tBodAc_mean_Y			grvity (g)
-3 		tBodyAcc-mean()-Z 		TRUE 		FALSE 		tBodAc_mean_Z			grvity (g)
-4 		tBodyAcc-std()-X 		FALSE 		TRUE 		tBodAc_std_X			grvity (g)
-5 		tBodyAcc-std()-Y 		FALSE 		TRUE 		tBodAc_std_Y			grvity (g)
-6 		tBodyAcc-std()-Z 		FALSE		TRUE 		tBodAc_std_Z			grvity (g)
-7 		tBodyAcc-mad()-X 		FALSE 		FALSE 		tBodAc_mad_X			grvity (g)
-8 		tBodyAcc-mad()-Y 		FALSE 		FALSE 		tBodAc_mad_Y			grvity (g)
-9 		tBodyAcc-mad()-Z 		FALSE 		FALSE 		tBodAc_mad_Z			grvity (g)
-10 		tBodyAcc-max()-X 		FALSE 		FALSE 		tBodAc_max_X			grvity (g)
-11 		tBodyAcc-max()-Y 		FALSE 		FALSE 		tBodAc_max_Y			grvity (g)
-12 		tBodyAcc-max()-Z 		FALSE 		FALSE 		tBodAc_max_Z			grvity (g)
-13 		tBodyAcc-min()-X 		FALSE 		FALSE 		tBodAc_min_X			grvity (g)
-14 		tBodyAcc-min()-Y 		FALSE 		FALSE 		tBodAc_min_Y			grvity (g)
-15 		tBodyAcc-min()-Z 		FALSE 		FALSE 		tBodAc_min_Z			grvity (g)
-16 		tBodyAcc-sma() 			FALSE 		FALSE 		tBodAc_sma			grvity (g)
-17 		tBodyAcc-energy()-X 		FALSE 		FALSE 		tBodAc_ergy_X			grvity (g)
-18 		tBodyAcc-energy()-Y 		FALSE 		FALSE 		tBodAc_ergy_Y			grvity (g)
-19 		tBodyAcc-energy()-Z 		FALSE 		FALSE 		tBodAc_ergy_Z			grvity (g)
-20 		tBodyAcc-iqr()-X 		FALSE 		FALSE 		tBodAc_iqr_X			grvity (g)
-21 		tBodyAcc-iqr()-Y 		FALSE 		FALSE 		tBodAc_iqr_Y			grvity (g)
-22 		tBodyAcc-iqr()-Z 		FALSE 		FALSE 		tBodAc_iqr_Z			grvity (g)
-23 		tBodyAcc-entropy()-X 		FALSE 		FALSE 		tBodAc_entrpy_X			grvity (g)
-24 		tBodyAcc-entropy()-Y 		FALSE 		FALSE 		tBodAc_entrpy_Y			grvity (g)
-25 		tBodyAcc-entropy()-Z 		FALSE 		FALSE 		tBodAc_entrpy_Z			grvity (g)
-26 		tBodyAcc-arCoeff()-X,1 		FALSE 		FALSE 		tBodAc_arCoeff_X.1		grvity (g)
-27 		tBodyAcc-arCoeff()-X,2 		FALSE 		FALSE 		tBodAc_arCoeff_X.2		grvity (g)
-28 		tBodyAcc-arCoeff()-X,3 		FALSE 		FALSE 		tBodAc_arCoeff_X.3		grvity (g)
-29 		tBodyAcc-arCoeff()-X,4 		FALSE 		FALSE 		tBodAc_arCoeff_X.4		grvity (g)
-30 		tBodyAcc-arCoeff()-Y,1 		FALSE 		FALSE 		tBodAc_arCoeff_Y.1		grvity (g)
-31 		tBodyAcc-arCoeff()-Y,2 		FALSE 		FALSE 		tBodAc_arCoeff_Y.2		grvity (g)
-32 		tBodyAcc-arCoeff()-Y,3 		FALSE 		FALSE 		tBodAc_arCoeff_Y.3		grvity (g)
-33 		tBodyAcc-arCoeff()-Y,4 		FALSE 		FALSE 		tBodAc_arCoeff_Y.4		grvity (g)
-34 		tBodyAcc-arCoeff()-Z,1 		FALSE 		FALSE 		tBodAc_arCoeff_Z.1		grvity (g)
-35 		tBodyAcc-arCoeff()-Z,2 		FALSE 		FALSE 		tBodAc_arCoeff_Z.2		grvity (g)
-36 		tBodyAcc-arCoeff()-Z,3 		FALSE 		FALSE 		tBodAc_arCoeff_Z.3		grvity (g)
-37 		tBodyAcc-arCoeff()-Z,4		FALSE 		FALSE 		tBodAc_arCoeff_Z.4		grvity (g)
-38 		tBodyAcc-correlation()-X,Y 	FALSE 		FALSE 		tBodAc_corr_X.Y			grvity (g)
-39 		tBodyAcc-correlation()-X,Z 	FALSE 		FALSE 		tBodAc_corr_X.Z			grvity (g)
-40 		tBodyAcc-correlation()-Y,Z 	FALSE 		FALSE 		tBodAc_corr_Y.Z			grvity (g)
-41 		tGravityAcc-mean()-X 		TRUE 		FALSE 		tGrvAc_mean_X			grvity (g)
-42 		tGravityAcc-mean()-Y 		TRUE 		FALSE 		tGrvAc_mean_Y			grvity (g)
-43 		tGravityAcc-mean()-Z 		TRUE 		FALSE 		tGrvAc_mean_Z			grvity (g)
-44 		tGravityAcc-std()-X 		FALSE 		TRUE 		tGrvAc_std_X			grvity (g)
-45 		tGravityAcc-std()-Y 		FALSE 		TRUE 		tGrvAc_std_Y			grvity (g)
-46 		tGravityAcc-std()-Z 		FALSE 		TRUE 		tGrvAc_std_Z			grvity (g)
-47 		tGravityAcc-mad()-X 		FALSE 		FALSE 		tGrvAc_mad_X			grvity (g)
-48 		tGravityAcc-mad()-Y 		FALSE 		FALSE 		tGrvAc_mad_Y			grvity (g)
-49 		tGravityAcc-mad()-Z 		FALSE 		FALSE 		tGrvAc_mad_Z			grvity (g)
-50 		tGravityAcc-max()-X 		FALSE 		FALSE 		tGrvAc_max_X			grvity (g)
+APPENDIX A:  This appendix relates shortened variable names to their original
+names of the UCI_HAR_Dataset.  The actual names used in the averaged tidy
+dataset for the course 'Getting and Cleaning Data' added a prefix of 'AV_' to
+the shortened names associated with mean and standard deviation values.
 
-Orig_COL	Previous_Name			IsMeanVar	IsStdevVar	ShorterVariableName		Units
---------	--------------------------	---------	----------	----------------------		-------
-51 		tGravityAcc-max()-Y 		FALSE 		FALSE 		tGrvAc_max_Y			grvity (g)
-52 		tGravityAcc-max()-Z 		FALSE 		FALSE 		tGrvAc_max_Z			grvity (g)
-53 		tGravityAcc-min()-X 		FALSE 		FALSE 		tGrvAc_min_X			grvity (g)
-54 		tGravityAcc-min()-Y 		FALSE 		FALSE 		tGrvAc_min_Y			grvity (g)
-55 		tGravityAcc-min()-Z 		FALSE 		FALSE 		tGrvAc_min_Z			grvity (g)
-56 		tGravityAcc-sma() 		FALSE 		FALSE 		tGrvAc_sma			grvity (g)
-57 		tGravityAcc-energy()-X 		FALSE 		FALSE 		tGrvAc_ergy_X			grvity (g)
-58 		tGravityAcc-energy()-Y 		FALSE 		FALSE 		tGrvAc_ergy_Y			grvity (g)
-59 		tGravityAcc-energy()-Z 		FALSE 		FALSE 		tGrvAc_ergy_Z			grvity (g)
-60 		tGravityAcc-iqr()-X 		FALSE 		FALSE 		tGrvAc_iqr_X			grvity (g)
-61 		tGravityAcc-iqr()-Y 		FALSE 		FALSE 		tGrvAc_iqr_Y			grvity (g)
-62 		tGravityAcc-iqr()-Z 		FALSE 		FALSE 		tGrvAc_iqr_Z			grvity (g)
-63 		tGravityAcc-entropy()-X 	FALSE 		FALSE 		tGrvAc_entrpy_X			grvity (g)
-64 		tGravityAcc-entropy()-Y 	FALSE 		FALSE 		tGrvAc_entrpy_Y			grvity (g)
-65 		tGravityAcc-entropy()-Z 	FALSE 		FALSE 		tGrvAc_entrpy_Z			grvity (g)
-66 		tGravityAcc-arCoeff()-X,1 	FALSE 		FALSE 		tGrvAc_arCoeff_X.1		grvity (g)
-67 		tGravityAcc-arCoeff()-X,2 	FALSE 		FALSE 		tGrvAc_arCoeff_X.2		grvity (g)
-68 		tGravityAcc-arCoeff()-X,3 	FALSE 		FALSE 		tGrvAc_arCoeff_X.3		grvity (g)
-69 		tGravityAcc-arCoeff()-X,4 	FALSE 		FALSE 		tGrvAc_arCoeff_X.4		grvity (g)
-70 		tGravityAcc-arCoeff()-Y,1 	FALSE 		FALSE 		tGrvAc_arCoeff_Y.1		grvity (g)
-71 		tGravityAcc-arCoeff()-Y,2 	FALSE 		FALSE 		tGrvAc_arCoeff_Y.2		grvity (g)
-72  		tGravityAcc-arCoeff()-Y,3 	FALSE  		FALSE 		tGrvAc_arCoeff_Y.3		grvity (g)
-73  		tGravityAcc-arCoeff()-Y,4 	FALSE  		FALSE 		tGrvAc_arCoeff_Y.4		grvity (g)
-74  		tGravityAcc-arCoeff()-Z,1 	FALSE  		FALSE 		tGrvAc_arCoeff_Z.1		grvity (g)
-75  		tGravityAcc-arCoeff()-Z,2 	FALSE  		FALSE 		tGrvAc_arCoeff_Z.2		grvity (g)
-76  		tGravityAcc-arCoeff()-Z,3 	FALSE  		FALSE 		tGrvAc_arCoeff_Z.3		grvity (g)
-77  		tGravityAcc-arCoeff()-Z,4 	FALSE  		FALSE 		tGrvAc_arCoeff_Z.4		grvity (g)
-78  		tGravityAcc-correlation()-X,Y 	FALSE 		FALSE 		tGrvAc_corr_X.Y			grvity (g)
-79  		tGravityAcc-correlation()-X,Z 	FALSE 		FALSE 		tGrvAc_corr_X.Z			grvity (g)
-80  		tGravityAcc-correlation()-Y,Z 	FALSE 		FALSE 		tGrvAc_corr_Y.Z			grvity (g)
-81  		tBodyAccJerk-mean()-X 		TRUE 		FALSE 		tBodAcJrk_mean_X		grvity (g)
-82  		tBodyAccJerk-mean()-Y 		TRUE 		FALSE 		tBodAcJrk_mean_Y		grvity (g)
-83  		tBodyAccJerk-mean()-Z 		TRUE 		FALSE 		tBodAcJrk_mean_Z		grvity (g)
-84  		tBodyAccJerk-std()-X 		FALSE 		TRUE 		tBodAcJrk_std_X			grvity (g)
-85  		tBodyAccJerk-std()-Y 		FALSE 		TRUE 		tBodAcJrk_std_Y			grvity (g)
-86  		tBodyAccJerk-std()-Z 		FALSE 		TRUE 		tBodAcJrk_std_Z			grvity (g)
-87  		tBodyAccJerk-mad()-X 		FALSE 		FALSE 		tBodAcJrk_mad_X			grvity (g)
-88  		tBodyAccJerk-mad()-Y 		FALSE 		FALSE 		tBodAcJrk_mad_Y			grvity (g)
-89  		tBodyAccJerk-mad()-Z 		FALSE 		FALSE 		tBodAcJrk_mad_Z			grvity (g)
-90  		tBodyAccJerk-max()-X 		FALSE 		FALSE 		tBodAcJrk_max_X			grvity (g)
-91  		tBodyAccJerk-max()-Y 		FALSE 		FALSE 		tBodAcJrk_max_Y			grvity (g)
-92  		tBodyAccJerk-max()-Z 		FALSE 		FALSE 		tBodAcJrk_max_Z			grvity (g)
-93  		tBodyAccJerk-min()-X 		FALSE 		FALSE 		tBodAcJrk_min_X			grvity (g)
-94  		tBodyAccJerk-min()-Y 		FALSE 		FALSE 		tBodAcJrk_min_Y			grvity (g)
-95  		tBodyAccJerk-min()-Z 		FALSE 		FALSE 		tBodAcJrk_min_Z			grvity (g)
-96  		tBodyAccJerk-sma() 		FALSE 		FALSE 		tBodAcJrk_sma			grvity (g)
-97  		tBodyAccJerk-energy()-X 	FALSE 		FALSE 		tBodAcJrk_ergy_X		grvity (g)
-98  		tBodyAccJerk-energy()-Y 	FALSE 		FALSE 		tBodAcJrk_ergy_Y		grvity (g)
-99  		tBodyAccJerk-energy()-Z 	FALSE 		FALSE 		tBodAcJrk_ergy_Z		grvity (g)
-100  		tBodyAccJerk-iqr()-X 		FALSE 		FALSE 		tBodAcJrk_iqr_X			grvity (g)
+Orig_COL	Previous_Name			     IsMeanVar	IsStdevVar	ShorterVariableName		  Units
+--------	----------------	      --------	--------	------------------		    -------
+1 	  	tBodyAcc-mean()-X 		      TRUE 		  FALSE 		tBodAc_mean_X			      grvity (g)
+2 		  tBodyAcc-mean()-Y     		  TRUE 		  FALSE 		tBodAc_mean_Y			      grvity (g)
+3 		  tBodyAcc-mean()-Z 	      	TRUE 		  FALSE 		tBodAc_mean_Z		      	grvity (g)
+4 	  	tBodyAcc-std()-X 	    	    FALSE 		TRUE 		  tBodAc_std_X      			grvity (g)
+5 		  tBodyAcc-std()-Y 		        FALSE 		TRUE 		  tBodAc_std_Y			      grvity (g)
+6 		  tBodyAcc-std()-Z    		    FALSE		  TRUE 		  tBodAc_std_Z      			grvity (g)
+7 		  tBodyAcc-mad()-X 		        FALSE 		FALSE 		tBodAc_mad_X			      grvity (g)
+8 		  tBodyAcc-mad()-Y 		        FALSE 		FALSE 		tBodAc_mad_Y      			grvity (g)
+9 		  tBodyAcc-mad()-Z    	  	  FALSE 		FALSE 		tBodAc_mad_Z			      grvity (g)
+10 		  tBodyAcc-max()-X 		        FALSE 		FALSE 		tBodAc_max_X      			grvity (g)
+11 		  tBodyAcc-max()-Y 		        FALSE 		FALSE 		tBodAc_max_Y			      grvity (g)
+12 	  	tBodyAcc-max()-Z 	    	    FALSE 		FALSE 		tBodAc_max_Z		      	grvity (g)
+13 		  tBodyAcc-min()-X 		        FALSE 		FALSE 		tBodAc_min_X      			grvity (g)
+14 	  	tBodyAcc-min()-Y    		    FALSE 		FALSE 		tBodAc_min_Y			      grvity (g)
+15 		  tBodyAcc-min()-Z 		        FALSE 		FALSE 		tBodAc_min_Z      			grvity (g)
+16 		  tBodyAcc-sma() 		  	      FALSE 		FALSE 		tBodAc_sma	      		  grvity (g)
+17 		  tBodyAcc-energy()-X    	    FALSE 		FALSE 		tBodAc_ergy_X			      grvity (g)
+18 		  tBodyAcc-energy()-Y 	      FALSE 		FALSE 		tBodAc_ergy_Y     			grvity (g)
+19 		  tBodyAcc-energy()-Z     	  FALSE 		FALSE 		tBodAc_ergy_Z			      grvity (g)
+20 		  tBodyAcc-iqr()-X 		        FALSE 		FALSE 		tBodAc_iqr_X      			grvity (g)
+21 		  tBodyAcc-iqr()-Y 	    	    FALSE 		FALSE 		tBodAc_iqr_Y			      grvity (g)
+22 		  tBodyAcc-iqr()-Z 	  	      FALSE 		FALSE 		tBodAc_iqr_Z	      		grvity (g)
+23 	  	tBodyAcc-entropy()-X    		FALSE 		FALSE 		tBodAc_entrpy_X			    grvity (g)
+24 		  tBodyAcc-entropy()-Y    		FALSE 		FALSE 		tBodAc_entrpy_Y			    grvity (g)
+25 	  	tBodyAcc-entropy()-Z    		FALSE 		FALSE 		tBodAc_entrpy_Z			    grvity (g)
+26 		tBodyAcc-arCoeff()-X,1    		FALSE 		FALSE 		tBodAc_arCoeff_X.1		  grvity (g)
+27 		tBodyAcc-arCoeff()-X,2    		FALSE 		FALSE 		tBodAc_arCoeff_X.2		  grvity (g)
+28 		tBodyAcc-arCoeff()-X,3    		FALSE 		FALSE 		tBodAc_arCoeff_X.3		  grvity (g)
+29 		tBodyAcc-arCoeff()-X,4    		FALSE 		FALSE 		tBodAc_arCoeff_X.4	  	grvity (g)
+30 		tBodyAcc-arCoeff()-Y,1 		    FALSE 		FALSE 		tBodAc_arCoeff_Y.1  		grvity (g)
+31 		tBodyAcc-arCoeff()-Y,2    		FALSE 		FALSE 		tBodAc_arCoeff_Y.2		  grvity (g)
+32 		tBodyAcc-arCoeff()-Y,3 		    FALSE 		FALSE 		tBodAc_arCoeff_Y.3	  	grvity (g)
+33 		tBodyAcc-arCoeff()-Y,4    		FALSE 		FALSE 		tBodAc_arCoeff_Y.4  		grvity (g)
+34 		tBodyAcc-arCoeff()-Z,1 		    FALSE 		FALSE 		tBodAc_arCoeff_Z.1		  grvity (g)
+35 		tBodyAcc-arCoeff()-Z,2    		FALSE 		FALSE 		tBodAc_arCoeff_Z.2	  	grvity (g)
+36 		tBodyAcc-arCoeff()-Z,3 		    FALSE 		FALSE 		tBodAc_arCoeff_Z.3		  grvity (g)
+37 		tBodyAcc-arCoeff()-Z,4    		FALSE 		FALSE 		tBodAc_arCoeff_Z.4	  	grvity (g)
+38 		tBodyAcc-correlation()-X,Y 	  FALSE 		FALSE 		tBodAc_corr_X.Y	    		grvity (g)
+39 		tBodyAcc-correlation()-X,Z  	FALSE 		FALSE 		tBodAc_corr_X.Z			    grvity (g)
+40 		tBodyAcc-correlation()-Y,Z 	  FALSE 		FALSE 		tBodAc_corr_Y.Z	    		grvity (g)
+41 		tGravityAcc-mean()-X 		      TRUE 	  	FALSE 		tGrvAc_mean_X		      	grvity (g)
+42 		tGravityAcc-mean()-Y 	    	  TRUE 		  FALSE 		tGrvAc_mean_Y		      	grvity (g)
+43 		tGravityAcc-mean()-Z 		      TRUE 	  	FALSE 		tGrvAc_mean_Z	      		grvity (g)
+44 		tGravityAcc-std()-X 		      FALSE 		TRUE 		  tGrvAc_std_X	      		grvity (g)
+45 		tGravityAcc-std()-Y 	    	  FALSE 		TRUE 		  tGrvAc_std_Y      			grvity (g)
+46 		tGravityAcc-std()-Z 	    	  FALSE 		TRUE 		  tGrvAc_std_Z      			grvity (g)
+47 		tGravityAcc-mad()-X 		      FALSE 		FALSE 		tGrvAc_mad_X      			grvity (g)
+48 		tGravityAcc-mad()-Y      		  FALSE 		FALSE 		tGrvAc_mad_Y			      grvity (g)
+49 		tGravityAcc-mad()-Z 		      FALSE 		FALSE 		tGrvAc_mad_Z      			grvity (g)
+50 		tGravityAcc-max()-X     		  FALSE 		FALSE 		tGrvAc_max_X			      grvity (g)
 
-Orig_COL	Previous_Name			IsMeanVar	IsStdevVar	ShorterVariableName		Units
---------	--------------------------	---------	----------	----------------------		-------
-101  		tBodyAccJerk-iqr()-Y 		FALSE 		FALSE 		tBodAcJrk_iqr_Y			grvity (g)
-102  		tBodyAccJerk-iqr()-Z 		FALSE 		FALSE 		tBodAcJrk_iqr_Z			grvity (g)
-103 		tBodyAccJerk-entropy()-X 	FALSE 		FALSE 		tBodAcJrk_entrpy_X		grvity (g)
-104 		tBodyAccJerk-entropy()-Y 	FALSE 		FALSE 		tBodAcJrk_entrpy_Y		grvity (g)
-105 		tBodyAccJerk-entropy()-Z 	FALSE 		FALSE 		tBodAcJrk_entrpy_Z		grvity (g)
-106 		tBodyAccJerk-arCoeff()-X,1 	FALSE 		FALSE 		tBodAcJrk_arCoeff_X.1		grvity (g)
-107 		tBodyAccJerk-arCoeff()-X,2 	FALSE 		FALSE 		tBodAcJrk_arCoeff_X.2		grvity (g)
-108 		tBodyAccJerk-arCoeff()-X,3 	FALSE 		FALSE 		tBodAcJrk_arCoeff_X.3		grvity (g)
-109 		tBodyAccJerk-arCoeff()-X,4 	FALSE 		FALSE 		tBodAcJrk_arCoeff_X.4		grvity (g)
-110 		tBodyAccJerk-arCoeff()-Y,1	FALSE 		FALSE 		tBodAcJrk_arCoeff_Y.1		grvity (g)
-111 		tBodyAccJerk-arCoeff()-Y,2 	FALSE 		FALSE 		tBodAcJrk_arCoeff_Y.2		grvity (g)
-112 		tBodyAccJerk-arCoeff()-Y,3 	FALSE 		FALSE 		tBodAcJrk_arCoeff_Y.3		grvity (g)
-113 		tBodyAccJerk-arCoeff()-Y,4 	FALSE 		FALSE 		tBodAcJrk_arCoeff_Y.4		grvity (g)
-114 		tBodyAccJerk-arCoeff()-Z,1 	FALSE 		FALSE 		tBodAcJrk_arCoeff_Z.1		grvity (g)
-115 		tBodyAccJerk-arCoeff()-Z,2 	FALSE 		FALSE 		tBodAcJrk_arCoeff_Z.2		grvity (g)
-116 		tBodyAccJerk-arCoeff()-Z,3 	FALSE 		FALSE 		tBodAcJrk_arCoeff_Z.3		grvity (g)
-117 		tBodyAccJerk-arCoeff()-Z,4 	FALSE 		FALSE 		tBodAcJrk_arCoeff_Z.4		grvity (g)
-118 		tBodyAccJerk-correlation()-X,Y	FALSE 		FALSE 		tBodAcJrk_corr_X.Y		grvity (g)
-119 		tBodyAccJerk-correlation()-X,Z	FALSE 		FALSE 		tBodAcJrk_corr_X.Z		grvity (g)
-120 		tBodyAccJerk-correlation()-Y,Z	FALSE 		FALSE 		tBodAcJrk_corr_Y.Z		grvity (g)
-121 		tBodyGyro-mean()-X 		TRUE 		FALSE 		tBodGyro_mean_Y			rad/sec
-123 		tBodyGyro-mean()-Z 		TRUE 		FALSE 		tBodGyro_mean_Z			rad/sec
-124 		tBodyGyro-std()-X 		FALSE 		TRUE 		tBodGyro_std_X			rad/sec
-125 		tBodyGyro-std()-Y 		FALSE 		TRUE 		tBodGyro_std_Y			rad/sec
-126 		tBodyGyro-std()-Z 		FALSE 		TRUE 		tBodGyro_std_Z			rad/sec
-127 		tBodyGyro-mad()-X 		FALSE 		FALSE 		tBodGyro_mad_X			rad/sec
-128 		tBodyGyro-mad()-Y 		FALSE 		FALSE 		tBodGyro_mad_Y			rad/sec
-129 		tBodyGyro-mad()-Z 		FALSE 		FALSE 		tBodGyro_mad_Z			rad/sec
-130 		tBodyGyro-max()-X 		FALSE 		FALSE 		tBodGyro_max_X			rad/sec
-131 		tBodyGyro-max()-Y 		FALSE 		FALSE 		tBodGyro_max_Y			rad/sec
-132 		tBodyGyro-max()-Z 		FALSE 		FALSE 		tBodGyro_max_Z			rad/sec
-133 		tBodyGyro-min()-X 		FALSE 		FALSE 		tBodGyro_min_X			rad/sec
-134 		tBodyGyro-min()-Y 		FALSE 		FALSE 		tBodGyro_min_Y			rad/sec
-135 		tBodyGyro-min()-Z 		FALSE 		FALSE 		tBodGyro_min_Z			rad/sec
-136 		tBodyGyro-sma() 		FALSE 		FALSE 		tBodGyro_sma			rad/sec
-137 		tBodyGyro-energy()-X 		FALSE 		FALSE 		tBodGyro_ergy_X			rad/sec
-138 		tBodyGyro-energy()-Y 		FALSE 		FALSE 		tBodGyro_ergy_Y			rad/sec
-139 		tBodyGyro-energy()-Z 		FALSE 		FALSE 		tBodGyro_ergy_Z			rad/sec
-140 		tBodyGyro-iqr()-X 		FALSE 		FALSE 		tBodGyro_iqr_X			rad/sec
-141 		tBodyGyro-iqr()-Y 		FALSE 		FALSE 		tBodGyro_iqr_Y			rad/sec
-142 		tBodyGyro-iqr()-Z 		FALSE 		FALSE 		tBodGyro_iqr_Z			rad/sec
-143 		tBodyGyro-entropy()-X 		FALSE 		FALSE 		tBodGyro_entrpy_X		rad/sec
-144 		tBodyGyro-entropy()-Y 		FALSE 		FALSE 		tBodGyro_entrpy_Y		rad/sec
-145 		tBodyGyro-entropy()-Z 		FALSE 		FALSE 		tBodGyro_entrpy_Z		rad/sec
-146 		tBodyGyro-arCoeff()-X,1 	FALSE 		FALSE 		tBodGyro_arCoeff_X.1		rad/sec
-147 		tBodyGyro-arCoeff()-X,2 	FALSE 		FALSE 		tBodGyro_arCoeff_X.2		rad/sec
-148 		tBodyGyro-arCoeff()-X,3 	FALSE 		FALSE 		tBodGyro_arCoeff_X.3		rad/sec
-149 		tBodyGyro-arCoeff()-X,4 	FALSE 		FALSE 		tBodGyro_arCoeff_X.4		rad/sec
-150 		tBodyGyro-arCoeff()-Y,1 	FALSE 		FALSE 		tBodGyro_arCoeff_Y.1		rad/sec
+Orig_COL	Previous_Name			      IsMeanVar	IsStdevVar	ShorterVariableName	    	Units
+--------	--------------------	---------	----------	----------------------	  -------
+51 		tGravityAcc-max()-Y       		FALSE 		FALSE 		tGrvAc_max_Y		      	grvity (g)
+52 		tGravityAcc-max()-Z 		      FALSE 		FALSE 		tGrvAc_max_Z		      	grvity (g)
+53 		tGravityAcc-min()-X 		      FALSE 		FALSE 		tGrvAc_min_X	      		grvity (g)
+54 		tGravityAcc-min()-Y       		FALSE 		FALSE 		tGrvAc_min_Y      			grvity (g)
+55 		tGravityAcc-min()-Z       		FALSE 		FALSE 		tGrvAc_min_Z      			grvity (g)
+56 		tGravityAcc-sma()         		FALSE 		FALSE 		tGrvAc_sma        			grvity (g)
+57 		tGravityAcc-energy()-X 		    FALSE 		FALSE 		tGrvAc_ergy_X			      grvity (g)
+58 		tGravityAcc-energy()-Y 	    	FALSE 		FALSE 		tGrvAc_ergy_Y	      		grvity (g)
+59 		tGravityAcc-energy()-Z 	    	FALSE 		FALSE 		tGrvAc_ergy_Z		      	grvity (g)
+60 		tGravityAcc-iqr()-X 	      	FALSE 		FALSE 		tGrvAc_iqr_X		      	grvity (g)
+61 		tGravityAcc-iqr()-Y 	      	FALSE 		FALSE 		tGrvAc_iqr_Y		      	grvity (g)
+62 		tGravityAcc-iqr()-Z 	      	FALSE 		FALSE 		tGrvAc_iqr_Z		      	grvity (g)
+63 		tGravityAcc-entropy()-X     	FALSE 		FALSE 		tGrvAc_entrpy_X		    	grvity (g)
+64 		tGravityAcc-entropy()-Y     	FALSE 		FALSE 		tGrvAc_entrpy_Y		    	grvity (g)
+65 		tGravityAcc-entropy()-Z 	    FALSE 		FALSE 		tGrvAc_entrpy_Z		    	grvity (g)
+66 		tGravityAcc-arCoeff()-X,1   	FALSE 		FALSE 		tGrvAc_arCoeff_X.1	  	grvity (g)
+67 		tGravityAcc-arCoeff()-X,2 	  FALSE 		FALSE 		tGrvAc_arCoeff_X.2	  	grvity (g)
+68 		tGravityAcc-arCoeff()-X,3   	FALSE 		FALSE 		tGrvAc_arCoeff_X.3	  	grvity (g)
+69 		tGravityAcc-arCoeff()-X,4   	FALSE 		FALSE 		tGrvAc_arCoeff_X.4	  	grvity (g)
+70 		tGravityAcc-arCoeff()-Y,1   	FALSE 		FALSE 		tGrvAc_arCoeff_Y.1	  	grvity (g)
+71 		tGravityAcc-arCoeff()-Y,2   	FALSE 		FALSE 		tGrvAc_arCoeff_Y.2	  	grvity (g)
+72  	tGravityAcc-arCoeff()-Y,3 	  FALSE  		FALSE 		tGrvAc_arCoeff_Y.3	  	grvity (g)
+73  	tGravityAcc-arCoeff()-Y,4   	FALSE  		FALSE 		tGrvAc_arCoeff_Y.4	  	grvity (g)
+74  	tGravityAcc-arCoeff()-Z,1   	FALSE  		FALSE 		tGrvAc_arCoeff_Z.1	  	grvity (g)
+75  	tGravityAcc-arCoeff()-Z,2   	FALSE  		FALSE 		tGrvAc_arCoeff_Z.2	  	grvity (g)
+76  	tGravityAcc-arCoeff()-Z,3   	FALSE  		FALSE 		tGrvAc_arCoeff_Z.3	  	grvity (g)
+77  	tGravityAcc-arCoeff()-Z,4 	  FALSE  		FALSE 		tGrvAc_arCoeff_Z.4	  	grvity (g)
+78  	tGravityAcc-correlation()-X,Y   FALSE 	FALSE 		tGrvAc_corr_X.Y		    	grvity (g)
+79		tGravityAcc-correlation()-X,Z 	FALSE 	FALSE 		tGrvAc_corr_X.Z		    	grvity (g)
+80  	tGravityAcc-correlation()-Y,Z 	FALSE 	FALSE 		tGrvAc_corr_Y.Z		    	grvity (g)
+81  	tBodyAccJerk-mean()-X 		    TRUE 		  FALSE 		tBodAcJrk_mean_X		    grvity (g)
+82		tBodyAccJerk-mean()-Y 		    TRUE 	  	FALSE 		tBodAcJrk_mean_Y		    grvity (g)
+83  	tBodyAccJerk-mean()-Z 	    	TRUE 		  FALSE 		tBodAcJrk_mean_Z		    grvity (g)
+84  	tBodyAccJerk-std()-X 		      FALSE 		TRUE 		  tBodAcJrk_std_X			    grvity (g)
+85  	tBodyAccJerk-std()-Y 		      FALSE 		TRUE 		  tBodAcJrk_std_Y		    	grvity (g)
+86  	tBodyAccJerk-std()-Z 		      FALSE 		TRUE 		  tBodAcJrk_std_Z			    grvity (g)
+87  	tBodyAccJerk-mad()-X 		      FALSE 		FALSE 		tBodAcJrk_mad_X			    grvity (g)
+88  	tBodyAccJerk-mad()-Y 	        FALSE 		FALSE 		tBodAcJrk_mad_Y			    grvity (g)
+89  	tBodyAccJerk-mad()-Z 	      	FALSE 		FALSE 		tBodAcJrk_mad_Z			    grvity (g)
+90  	tBodyAccJerk-max()-X 		      FALSE 		FALSE 		tBodAcJrk_max_X			    grvity (g)
+91  	tBodyAccJerk-max()-Y 		      FALSE 		FALSE 		tBodAcJrk_max_Y			    grvity (g)
+92  	tBodyAccJerk-max()-Z 	      	FALSE 		FALSE 		tBodAcJrk_max_Z			    grvity (g)
+93  	tBodyAccJerk-min()-X 	      	FALSE 		FALSE 		tBodAcJrk_min_X			    grvity (g)
+94  	tBodyAccJerk-min()-Y 	      	FALSE 		FALSE 		tBodAcJrk_min_Y			    grvity (g)
+95  	tBodyAccJerk-min()-Z 	      	FALSE 		FALSE 		tBodAcJrk_min_Z			    grvity (g)
+96  	tBodyAccJerk-sma() 		        FALSE 		FALSE 		tBodAcJrk_sma		  	    grvity (g)
+97  	tBodyAccJerk-energy()-X 	    FALSE 	  FALSE 		tBodAcJrk_ergy_X	    	grvity (g)
+98  	tBodyAccJerk-energy()-Y 	    FALSE 	  FALSE 		tBodAcJrk_ergy_Y		    grvity (g)
+99  	tBodyAccJerk-energy()-Z 	    FALSE 	  FALSE 		tBodAcJrk_ergy_Z		    grvity (g)
+100  	tBodyAccJerk-iqr()-X 		      FALSE 		FALSE 		tBodAcJrk_iqr_X			    grvity (g)
 
-Orig_COL	Previous_Name			IsMeanVar	IsStdevVar	ShorterVariableName		Units
---------	--------------------------	---------	----------	----------------------		-------
-151 		tBodyGyro-arCoeff()-Y,2 	FALSE 		FALSE 		tBodGyro_arCoeff_Y.2		rad/sec
-152 		tBodyGyro-arCoeff()-Y,3 	FALSE 		FALSE 		tBodGyro_arCoeff_Y.3		rad/sec
-153 		tBodyGyro-arCoeff()-Y,4 	FALSE 		FALSE 		tBodGyro_arCoeff_Y.4		rad/sec
-154 		tBodyGyro-arCoeff()-Z,1 	FALSE 		FALSE 		tBodGyro_arCoeff_Z.1		rad/sec
-155 		tBodyGyro-arCoeff()-Z,2 	FALSE 		FALSE 		tBodGyro_arCoeff_Z.2		rad/sec
-156 		tBodyGyro-arCoeff()-Z,3 	FALSE 		FALSE 		tBodGyro_arCoeff_Z.3		rad/sec
-157 		tBodyGyro-arCoeff()-Z,4 	FALSE 		FALSE 		tBodGyro_arCoeff_Z.4		rad/sec
-158 		tBodyGyro-correlation()-X,Y 	FALSE 		FALSE 		tBodGyro_corr_X.Y		rad/sec
-159 		tBodyGyro-correlation()-X,Z 	FALSE 		FALSE 		tBodGyro_corr_X.Z		rad/sec
-160 		tBodyGyro-correlation()-Y,Z 	FALSE 		FALSE 		tBodGyro_corr_Y.Z		rad/sec
-161 		tBodyGyroJerk-mean()-X 		TRUE 		FALSE 		tBodGyroJrk_mean_X		rad/sec
-162 		tBodyGyroJerk-mean()-Y 		TRUE 		FALSE 		tBodGyroJrk_mean_Y		rad/sec
-163 		tBodyGyroJerk-mean()-Z 		TRUE 		FALSE 		tBodGyroJrk_mean_Z		rad/sec
-164 		tBodyGyroJerk-std()-X 	 	FALSE 		TRUE 		tBodGyroJrk_std_X		rad/sec
-165 		tBodyGyroJerk-std()-Y 	 	FALSE 		TRUE 		tBodGyroJrk_std_Y		rad/sec
-166 		tBodyGyroJerk-std()-Z 	 	FALSE 		TRUE 		tBodGyroJrk_std_Z		rad/sec
-167 		tBodyGyroJerk-mad()-X 	 	FALSE 		FALSE 		tBodGyroJrk_mad_X		rad/sec
-168 		tBodyGyroJerk-mad()-Y 	 	FALSE 		FALSE 		tBodGyroJrk_mad_Y		rad/sec
-169 		tBodyGyroJerk-mad()-Z 	 	FALSE 		FALSE 		tBodGyroJrk_mad_Z		rad/sec
-170 		tBodyGyroJerk-max()-X 	 	FALSE 		FALSE 		tBodGyroJrk_max_X		rad/sec
-171 		tBodyGyroJerk-max()-Y 	 	FALSE 		FALSE 		tBodGyroJrk_max_Y		rad/sec
-172 		tBodyGyroJerk-max()-Z 	 	FALSE 		FALSE 		tBodGyroJrk_max_Z		rad/sec
-173 		tBodyGyroJerk-min()-X 	 	FALSE 		FALSE 		tBodGyroJrk_min_X		rad/sec
-174 		tBodyGyroJerk-min()-Y 	 	FALSE 		FALSE 		tBodGyroJrk_min_Y		rad/sec
-175 		tBodyGyroJerk-min()-Z 	 	FALSE 		FALSE 		tBodGyroJrk_min_Z		rad/sec
-176 		tBodyGyroJerk-sma() 	 	FALSE 		FALSE 		tBodGyroJrk_sma			rad/sec
-177 		tBodyGyroJerk-energy()-X 	FALSE 		FALSE 		tBodGyroJrk_ergy_X		rad/sec
-178 		tBodyGyroJerk-energy()-Y 	FALSE 		FALSE 		tBodGyroJrk_ergy_Y		rad/sec
-179 		tBodyGyroJerk-energy()-Z 	FALSE 		FALSE 		tBodGyroJrk_ergy_Z		rad/sec
-180 		tBodyGyroJerk-iqr()-X 	 	FALSE 		FALSE 		tBodGyroJrk_iqr_X		rad/sec
-181 		tBodyGyroJerk-iqr()-Y 	 	FALSE 		FALSE 		tBodGyroJrk_iqr_Y		rad/sec
-182 		tBodyGyroJerk-iqr()-Z 	 	FALSE 		FALSE 		tBodGyroJrk_iqr_Z		rad/sec
-183 		tBodyGyroJerk-entropy()-X 	FALSE 		FALSE 		tBodGyroJrk_entrpy_X		rad/sec
-184 		tBodyGyroJerk-entropy()-Y 	FALSE 		FALSE 		tBodGyroJrk_entrpy_Y		rad/sec
-185 		tBodyGyroJerk-entropy()-Z 	FALSE 		FALSE 		tBodGyroJrk_entrpy_Z		rad/sec
-186 		tBodyGyroJerk-arCoeff()-X,1 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_X.1		rad/sec
-187 		tBodyGyroJerk-arCoeff()-X,2 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_X.2		rad/sec
-188 		tBodyGyroJerk-arCoeff()-X,3 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_X.3		rad/sec
-189 		tBodyGyroJerk-arCoeff()-X,4 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_X.4		rad/sec
-190 		tBodyGyroJerk-arCoeff()-Y,1 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_Y.1		rad/sec
-191 		tBodyGyroJerk-arCoeff()-Y,2 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_Y.2		rad/sec
-192 		tBodyGyroJerk-arCoeff()-Y,3 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_Y.3		rad/sec
-193 		tBodyGyroJerk-arCoeff()-Y,4 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_Y.4		rad/sec
-194 		tBodyGyroJerk-arCoeff()-Z,1 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_Z.1		rad/sec
-195 		tBodyGyroJerk-arCoeff()-Z,2 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_Z.2		rad/sec
-196 		tBodyGyroJerk-arCoeff()-Z,3 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_Z.3		rad/sec
-197 		tBodyGyroJerk-arCoeff()-Z,4 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_Z.4		rad/sec
-198 		tBodyGyroJerk-correlation()-X,Y FALSE 		FALSE 		tBodGyroJrk_corr_X.Y		rad/sec
-199 		tBodyGyroJerk-correlation()-X,Z FALSE 		FALSE 		tBodGyroJrk_corr_X.Z		rad/sec
-200 		tBodyGyroJerk-correlation()-Y,Z FALSE 		FALSE 		tBodGyroJrk_corr_Y.Z		rad/sec
+Orig_COL	Previous_Name		        	IsMeanVar	IsStdevVar	ShorterVariableName 		Units
+--------	---------------------	  ---------	----------	----------------------	-------
+101  	tBodyAccJerk-iqr()-Y 		      FALSE 		FALSE 		tBodAcJrk_iqr_Y			    grvity (g)
+102  	tBodyAccJerk-iqr()-Z 		      FALSE 		FALSE 		tBodAcJrk_iqr_Z			    grvity (g)
+103 	tBodyAccJerk-entropy()-X 	    FALSE 		FALSE 		tBodAcJrk_entrpy_X		  grvity (g)
+104 	tBodyAccJerk-entropy()-Y 	    FALSE 		FALSE 		tBodAcJrk_entrpy_Y	  	grvity (g)
+105 	tBodyAccJerk-entropy()-Z 	    FALSE 		FALSE 		tBodAcJrk_entrpy_Z		  grvity (g)
+106 	tBodyAccJerk-arCoeff()-X,1 	  FALSE 		FALSE 		tBodAcJrk_arCoeff_X.1		grvity (g)
+107 	tBodyAccJerk-arCoeff()-X,2 	  FALSE 		FALSE 		tBodAcJrk_arCoeff_X.2		grvity (g)
+108 	tBodyAccJerk-arCoeff()-X,3 	  FALSE 		FALSE 		tBodAcJrk_arCoeff_X.3		grvity (g)
+109 	tBodyAccJerk-arCoeff()-X,4 	  FALSE 		FALSE 		tBodAcJrk_arCoeff_X.4		grvity (g)
+110 	tBodyAccJerk-arCoeff()-Y,1	  FALSE 		FALSE 		tBodAcJrk_arCoeff_Y.1		grvity (g)
+111 	tBodyAccJerk-arCoeff()-Y,2 	  FALSE 		FALSE 		tBodAcJrk_arCoeff_Y.2		grvity (g)
+112 	tBodyAccJerk-arCoeff()-Y,3 	  FALSE 		FALSE 		tBodAcJrk_arCoeff_Y.3		grvity (g)
+113 	tBodyAccJerk-arCoeff()-Y,4 	  FALSE 		FALSE 		tBodAcJrk_arCoeff_Y.4		grvity (g)
+114 	tBodyAccJerk-arCoeff()-Z,1  	FALSE 		FALSE 		tBodAcJrk_arCoeff_Z.1		grvity (g)
+115 	tBodyAccJerk-arCoeff()-Z,2 	  FALSE 		FALSE 		tBodAcJrk_arCoeff_Z.2		grvity (g)
+116 	tBodyAccJerk-arCoeff()-Z,3 	  FALSE 		FALSE 		tBodAcJrk_arCoeff_Z.3		grvity (g)
+117 	tBodyAccJerk-arCoeff()-Z,4 	  FALSE 		FALSE 		tBodAcJrk_arCoeff_Z.4		grvity (g)
+118 	tBodyAccJerk-correlation()-X,Y	FALSE 	FALSE 		tBodAcJrk_corr_X.Y		  grvity (g)
+119 	tBodyAccJerk-correlation()-X,Z	FALSE 	FALSE 		tBodAcJrk_corr_X.Z		  grvity (g)
+120 	tBodyAccJerk-correlation()-Y,Z	FALSE 	FALSE 		tBodAcJrk_corr_Y.Z		  grvity (g)
+121 	tBodyGyro-mean()-X 		        TRUE 		  FALSE 		tBodGyro_mean_Y			    rad/sec
+123 	tBodyGyro-mean()-Z 		        TRUE 		  FALSE 		tBodGyro_mean_Z			    rad/sec
+124 	tBodyGyro-std()-X 		        FALSE 		TRUE 		  tBodGyro_std_X			    rad/sec
+125 	tBodyGyro-std()-Y 		        FALSE 		TRUE 		  tBodGyro_std_Y		    	rad/sec
+126 	tBodyGyro-std()-Z 		        FALSE 		TRUE 		  tBodGyro_std_Z			    rad/sec
+127 	tBodyGyro-mad()-X 	          FALSE 		FALSE 		tBodGyro_mad_X			    rad/sec
+128 	tBodyGyro-mad()-Y 		        FALSE 		FALSE 		tBodGyro_mad_Y			    rad/sec
+129 	tBodyGyro-mad()-Z 		        FALSE 		FALSE 		tBodGyro_mad_Z			    rad/sec
+130 	tBodyGyro-max()-X 		        FALSE 		FALSE 		tBodGyro_max_X			    rad/sec
+131 	tBodyGyro-max()-Y 		        FALSE 		FALSE 		tBodGyro_max_Y			    rad/sec
+132 	tBodyGyro-max()-Z 		        FALSE 		FALSE 		tBodGyro_max_Z			    rad/sec
+133 	tBodyGyro-min()-X 		        FALSE 		FALSE 		tBodGyro_min_X			    rad/sec
+134 	tBodyGyro-min()-Y 	        	FALSE 		FALSE 		tBodGyro_min_Y			    rad/sec
+135 	tBodyGyro-min()-Z 		        FALSE 		FALSE 		tBodGyro_min_Z			    rad/sec
+136 	tBodyGyro-sma() 		          FALSE 		FALSE 		tBodGyro_sma			      rad/sec
+137 	tBodyGyro-energy()-X 	      	FALSE 		FALSE 		tBodGyro_ergy_X			    rad/sec
+138 	tBodyGyro-energy()-Y 		      FALSE 		FALSE 		tBodGyro_ergy_Y			    rad/sec
+139 	tBodyGyro-energy()-Z 		      FALSE 		FALSE 		tBodGyro_ergy_Z			    rad/sec
+140 	tBodyGyro-iqr()-X 	        	FALSE 		FALSE 		tBodGyro_iqr_X		    	rad/sec
+141 	tBodyGyro-iqr()-Y 		        FALSE 		FALSE 		tBodGyro_iqr_Y		    	rad/sec
+142 	tBodyGyro-iqr()-Z 		        FALSE 		FALSE 		tBodGyro_iqr_Z		    	rad/sec
+143 	tBodyGyro-entropy()-X 		    FALSE 		FALSE 		tBodGyro_entrpy_X		    rad/sec
+144 	tBodyGyro-entropy()-Y 		    FALSE 		FALSE 		tBodGyro_entrpy_Y	    	rad/sec
+145 	tBodyGyro-entropy()-Z 	    	FALSE 		FALSE 		tBodGyro_entrpy_Z		    rad/sec
+146 	tBodyGyro-arCoeff()-X,1 	    FALSE 		FALSE 		tBodGyro_arCoeff_X.1		rad/sec
+147 	tBodyGyro-arCoeff()-X,2     	FALSE 		FALSE 		tBodGyro_arCoeff_X.2		rad/sec
+148 	tBodyGyro-arCoeff()-X,3     	FALSE 		FALSE 		tBodGyro_arCoeff_X.3		rad/sec
+149 	tBodyGyro-arCoeff()-X,4 	    FALSE 		FALSE 		tBodGyro_arCoeff_X.4		rad/sec
+150 	tBodyGyro-arCoeff()-Y,1     	FALSE 		FALSE 		tBodGyro_arCoeff_Y.1		rad/sec
 
-Orig_COL	Previous_Name			IsMeanVar	IsStdevVar	ShorterVariableName		Units
---------	--------------------------	---------	----------	----------------------		-------
-201 		tBodyAccMag-mean() 		TRUE 		FALSE 		tBodAcMag_mean			grvity (g)
-202 		tBodyAccMag-std() 	 	FALSE 		TRUE 		tBodAcMag_std			grvity (g)
-203 		tBodyAccMag-mad() 	 	FALSE		FALSE 		tBodAcMag_mad			grvity (g)
-204 		tBodyAccMag-max() 	 	FALSE		FALSE 		tBodAcMag_max			grvity (g)
-205 		tBodyAccMag-min() 	 	FALSE		FALSE 		tBodAcMag_min			grvity (g)
-206 		tBodyAccMag-sma() 	 	FALSE		FALSE 		tBodAcMag_sma			grvity (g)
-207 		tBodyAccMag-energy() 	 	FALSE		FALSE 		tBodAcMag_ergy			grvity (g)
-208 		tBodyAccMag-iqr() 	 	FALSE		FALSE 		tBodAcMag_iqr			grvity (g)
-209 		tBodyAccMag-entropy() 	 	FALSE		FALSE 		tBodAcMag_entrpy		grvity (g)
-210 		tBodyAccMag-arCoeff()1 	 	FALSE		FALSE 		tBodAcMag_arCoeff1		grvity (g)
-211 		tBodyAccMag-arCoeff()2 	 	FALSE		FALSE 		tBodAcMag_arCoeff2		grvity (g)
-212 		tBodyAccMag-arCoeff()3 	 	FALSE		FALSE 		tBodAcMag_arCoeff3		grvity (g)
-213 		tBodyAccMag-arCoeff()4 	 	FALSE		FALSE 		tBodAcMag_arCoeff4		grvity (g)
-214 		tGravityAccMag-mean()		TRUE		FALSE 		tGrvAcMag_mean			grvity (g)
-215 		tGravityAccMag-std() 	 	FALSE 		TRUE 		tGrvAcMag_std			grvity (g)
-216 		tGravityAccMag-mad() 	 	FALSE		FALSE 		tGrvAcMag_mad			grvity (g)
-217 		tGravityAccMag-max() 	 	FALSE		FALSE 		tGrvAcMag_max			grvity (g)
-218 		tGravityAccMag-min() 	 	FALSE		FALSE 		tGrvAcMag_min			grvity (g)
-219 		tGravityAccMag-sma() 	 	FALSE		FALSE 		tGrvAcMag_sma			grvity (g)
-220 		tGravityAccMag-energy() 	FALSE		FALSE 		tGrvAcMag_ergy			grvity (g)
-221 		tGravityAccMag-iqr() 	 	FALSE		FALSE 		tGrvAcMag_iqr			grvity (g)
-222 		tGravityAccMag-entropy() 	FALSE		FALSE 		tGrvAcMag_entrpy		grvity (g)
-223 		tGravityAccMag-arCoeff()1 	FALSE		FALSE 		tGrvAcMag_arCoeff1		grvity (g)
-224 		tGravityAccMag-arCoeff()2 	FALSE		FALSE 		tGrvAcMag_arCoeff2		grvity (g)
-225 		tGravityAccMag-arCoeff()3 	FALSE		FALSE 		tGrvAcMag_arCoeff3		grvity (g)
-226 		tGravityAccMag-arCoeff()4 	FALSE		FALSE 		tGrvAcMag_arCoeff4		grvity (g)
-227 		tBodyAccJerkMag-mean()		TRUE		FALSE 		tBodAcJrkMag_mean		grvity (g)
-228 		tBodyAccJerkMag-std() 	 	FALSE 		TRUE 		tBodAcJrkMag_std		grvity (g)
-229 		tBodyAccJerkMag-mad() 	 	FALSE		FALSE 		tBodAcJrkMag_mad		grvity (g)
-230 		tBodyAccJerkMag-max() 	 	FALSE		FALSE 		tBodAcJrkMag_max		grvity (g)
-231 		tBodyAccJerkMag-min() 	 	FALSE		FALSE 		tBodAcJrkMag_min		grvity (g)
-232 		tBodyAccJerkMag-sma() 	 	FALSE		FALSE 		tBodAcJrkMag_sma		grvity (g)
-233 		tBodyAccJerkMag-energy() 	FALSE		FALSE 		tBodAcJrkMag_ergy		grvity (g)
-234 		tBodyAccJerkMag-iqr() 	 	FALSE		FALSE 		tBodAcJrkMag_iqr		grvity (g)
-235 		tBodyAccJerkMag-entropy() 	FALSE		FALSE 		tBodAcJrkMag_entrpy		grvity (g)
-236 		tBodyAccJerkMag-arCoeff()1 	FALSE		FALSE 		tBodAcJrkMag_arCoeff1		grvity (g)
-237 		tBodyAccJerkMag-arCoeff()2 	FALSE		FALSE 		tBodAcJrkMag_arCoeff2		grvity (g)
-238 		tBodyAccJerkMag-arCoeff()3 	FALSE		FALSE 		tBodAcJrkMag_arCoeff3		grvity (g)
-239 		tBodyAccJerkMag-arCoeff()4 	FALSE		FALSE 		tBodAcJrkMag_arCoeff4		grvity (g)
-240 		tBodyGyroMag-mean()  		TRUE		FALSE 		tBodGyroMag_mean		rad/sec
-241 		tBodyGyroMag-std() 	 	FALSE 		TRUE 		tBodGyroMag_std			rad/sec
-242 		tBodyGyroMag-mad() 	 	FALSE		FALSE 		tBodGyroMag_mad			rad/sec
-243 		tBodyGyroMag-max() 	 	FALSE		FALSE 		tBodGyroMag_max			rad/sec
-244 		tBodyGyroMag-min() 	 	FALSE		FALSE 		tBodGyroMag_min			rad/sec
-245 		tBodyGyroMag-sma() 	 	FALSE		FALSE 		tBodGyroMag_sma			rad/sec
-246 		tBodyGyroMag-energy() 	 	FALSE		FALSE 		tBodGyroMag_ergy		rad/sec
-247 		tBodyGyroMag-iqr() 	 	FALSE		FALSE 		tBodGyroMag_iqr			rad/sec
-248 		tBodyGyroMag-entropy() 	 	FALSE		FALSE 		tBodGyroMag_entrpy		rad/sec
-249 		tBodyGyroMag-arCoeff()1 	FALSE		FALSE 		tBodGyroMag_arCoeff1		rad/sec
-250 		tBodyGyroMag-arCoeff()2 	FALSE		FALSE 		tBodGyroMag_arCoeff2		rad/sec
+Orig_COL	Previous_Name		      	IsMeanVar	IsStdevVar	ShorterVariableName		    Units
+--------	--------------------	  ---------	----------	----------------------		-------
+151 	tBodyGyro-arCoeff()-Y,2 	    FALSE 		FALSE 		tBodGyro_arCoeff_Y.2		rad/sec
+152 	tBodyGyro-arCoeff()-Y,3 	    FALSE 		FALSE 		tBodGyro_arCoeff_Y.3		rad/sec
+153 	tBodyGyro-arCoeff()-Y,4     	FALSE 		FALSE 		tBodGyro_arCoeff_Y.4		rad/sec
+154 	tBodyGyro-arCoeff()-Z,1     	FALSE 		FALSE 		tBodGyro_arCoeff_Z.1		rad/sec
+155 	tBodyGyro-arCoeff()-Z,2 	    FALSE 		FALSE 		tBodGyro_arCoeff_Z.2		rad/sec
+156 	tBodyGyro-arCoeff()-Z,3     	FALSE 		FALSE 		tBodGyro_arCoeff_Z.3		rad/sec
+157 	tBodyGyro-arCoeff()-Z,4 	    FALSE 		FALSE 		tBodGyro_arCoeff_Z.4		rad/sec
+158 	tBodyGyro-correlation()-X,Y 	FALSE 		FALSE 		tBodGyro_corr_X.Y		    rad/sec
+159 	tBodyGyro-correlation()-X,Z 	FALSE 		FALSE 		tBodGyro_corr_X.Z		    rad/sec
+160 	tBodyGyro-correlation()-Y,Z 	FALSE 		FALSE 		tBodGyro_corr_Y.Z		    rad/sec
+161 	tBodyGyroJerk-mean()-X 		    TRUE 		  FALSE 		tBodGyroJrk_mean_X		  rad/sec
+162 	tBodyGyroJerk-mean()-Y 		    TRUE 		  FALSE 		tBodGyroJrk_mean_Y	  	rad/sec
+163 	tBodyGyroJerk-mean()-Z 	    	TRUE 		  FALSE 		tBodGyroJrk_mean_Z	  	rad/sec
+164 	tBodyGyroJerk-std()-X 	    	FALSE 		TRUE 		  tBodGyroJrk_std_X		    rad/sec
+165 	tBodyGyroJerk-std()-Y 	 	    FALSE 		TRUE 	  	tBodGyroJrk_std_Y	    	rad/sec
+166 	tBodyGyroJerk-std()-Z 	 	    FALSE 		TRUE 		  tBodGyroJrk_std_Z		    rad/sec
+167 	tBodyGyroJerk-mad()-X 	 	    FALSE 		FALSE 		tBodGyroJrk_mad_X		    rad/sec
+168 	tBodyGyroJerk-mad()-Y 	 	    FALSE 		FALSE 		tBodGyroJrk_mad_Y	    	rad/sec
+169 	tBodyGyroJerk-mad()-Z 	 	    FALSE 		FALSE 		tBodGyroJrk_mad_Z	    	rad/sec
+170 	tBodyGyroJerk-max()-X 	 	    FALSE 		FALSE 		tBodGyroJrk_max_X	    	rad/sec
+171 	tBodyGyroJerk-max()-Y 	    	FALSE 		FALSE 		tBodGyroJrk_max_Y		    rad/sec
+172 	tBodyGyroJerk-max()-Z 	    	FALSE 		FALSE 		tBodGyroJrk_max_Z	    	rad/sec
+173 	tBodyGyroJerk-min()-X 	    	FALSE 		FALSE 		tBodGyroJrk_min_X	    	rad/sec
+174 	tBodyGyroJerk-min()-Y 	    	FALSE 		FALSE 		tBodGyroJrk_min_Y		    rad/sec
+175 	tBodyGyroJerk-min()-Z 	 	    FALSE 		FALSE 		tBodGyroJrk_min_Z		    rad/sec
+176 	tBodyGyroJerk-sma() 	      	FALSE 		FALSE 		tBodGyroJrk_sma			    rad/sec
+177 	tBodyGyroJerk-energy()-X 	    FALSE 		FALSE 		tBodGyroJrk_ergy_X	  	rad/sec
+178 	tBodyGyroJerk-energy()-Y 	    FALSE 		FALSE 		tBodGyroJrk_ergy_Y		  rad/sec
+179 	tBodyGyroJerk-energy()-Z 	    FALSE 		FALSE 		tBodGyroJrk_ergy_Z	  	rad/sec
+180 	tBodyGyroJerk-iqr()-X 	 	    FALSE 		FALSE 		tBodGyroJrk_iqr_X		    rad/sec
+181 	tBodyGyroJerk-iqr()-Y 	 	    FALSE 		FALSE 		tBodGyroJrk_iqr_Y		    rad/sec
+182 	tBodyGyroJerk-iqr()-Z 	    	FALSE 		FALSE 		tBodGyroJrk_iqr_Z		    rad/sec
+183 	tBodyGyroJerk-entropy()-X   	FALSE 		FALSE 		tBodGyroJrk_entrpy_X		rad/sec
+184 	tBodyGyroJerk-entropy()-Y   	FALSE 		FALSE 		tBodGyroJrk_entrpy_Y		rad/sec
+185 	tBodyGyroJerk-entropy()-Z 	  FALSE 		FALSE 		tBodGyroJrk_entrpy_Z		rad/sec
+186 	tBodyGyroJerk-arCoeff()-X,1 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_X.1		rad/sec
+187 	tBodyGyroJerk-arCoeff()-X,2 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_X.2		rad/sec
+188 	tBodyGyroJerk-arCoeff()-X,3 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_X.3		rad/sec
+189 	tBodyGyroJerk-arCoeff()-X,4 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_X.4		rad/sec
+190 	tBodyGyroJerk-arCoeff()-Y,1 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_Y.1		rad/sec
+191 	tBodyGyroJerk-arCoeff()-Y,2 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_Y.2		rad/sec
+192 	tBodyGyroJerk-arCoeff()-Y,3 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_Y.3		rad/sec
+193 	tBodyGyroJerk-arCoeff()-Y,4 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_Y.4		rad/sec
+194 	tBodyGyroJerk-arCoeff()-Z,1 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_Z.1		rad/sec
+195 	tBodyGyroJerk-arCoeff()-Z,2 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_Z.2		rad/sec
+196 	tBodyGyroJerk-arCoeff()-Z,3 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_Z.3		rad/sec
+197 	tBodyGyroJerk-arCoeff()-Z,4 	FALSE 		FALSE 		tBodGyroJrk_arCoeff_Z.4		rad/sec
+198 	tBodyGyroJerk-correlation()-X,Y FALSE 	FALSE 		tBodGyroJrk_corr_X.Y		rad/sec
+199 	tBodyGyroJerk-correlation()-X,Z FALSE 	FALSE 		tBodGyroJrk_corr_X.Z		rad/sec
+200 	tBodyGyroJerk-correlation()-Y,Z FALSE 	FALSE 		tBodGyroJrk_corr_Y.Z		rad/sec
 
-Orig_COL	Previous_Name			IsMeanVar	IsStdevVar	ShorterVariableName		Units
---------	--------------------------	---------	----------	----------------------		-------
-251 		tBodyGyroMag-arCoeff()3 	FALSE		FALSE 		tBodGyroMag_arCoeff3		rad/sec
-252 		tBodyGyroMag-arCoeff()4 	FALSE		FALSE 		tBodGyroMag_arCoeff4		rad/sec
-253 		tBodyGyroJerkMag-mean()  	TRUE		FALSE 		tBodGyroJrkMag_mean		rad/sec
-254 		tBodyGyroJerkMag-std() 	 	FALSE 		TRUE 		tBodGyroJrkMag_std		rad/sec
-255 		tBodyGyroJerkMag-mad() 	 	FALSE		FALSE 		tBodGyroJrkMag_mad		rad/sec
-256 		tBodyGyroJerkMag-max() 	 	FALSE		FALSE 		tBodGyroJrkMag_max		rad/sec
-257 		tBodyGyroJerkMag-min() 	 	FALSE		FALSE 		tBodGyroJrkMag_min		rad/sec
-258 		tBodyGyroJerkMag-sma() 	 	FALSE		FALSE 		tBodGyroJrkMag_sma		rad/sec
-259 		tBodyGyroJerkMag-energy() 	FALSE		FALSE 		tBodGyroJrkMag_ergy		rad/sec
-260 		tBodyGyroJerkMag-iqr() 	 	FALSE		FALSE 		tBodGyroJrkMag_iqr		rad/sec
-261 		tBodyGyroJerkMag-entropy() 	FALSE		FALSE 		tBodGyroJrkMag_entrpy		rad/sec
-262 		tBodyGyroJerkMag-arCoeff()1 	FALSE		FALSE 		tBodGyroJrkMag_arCoeff1		rad/sec
-263 		tBodyGyroJerkMag-arCoeff()2 	FALSE		FALSE 		tBodGyroJrkMag_arCoeff2		rad/sec
-264 		tBodyGyroJerkMag-arCoeff()3 	FALSE		FALSE 		tBodGyroJrkMag_arCoeff3		rad/sec
-265 		tBodyGyroJerkMag-arCoeff()4 	FALSE		FALSE 		tBodGyroJrkMag_arCoeff4		rad/sec
-266 		fBodyAcc-mean()-X  		TRUE		FALSE 		fBodAc_mean_X			grvity (g)
-267 		fBodyAcc-mean()-Y  		TRUE		FALSE 		fBodAc_mean_Y			grvity (g)
-268 		fBodyAcc-mean()-Z  		TRUE		FALSE 		fBodAc_mean_Z			grvity (g)
-269 		fBodyAcc-std()-X 	 	FALSE 		TRUE 		fBodAc_std_X			grvity (g)
-270 		fBodyAcc-std()-Y 	 	FALSE 		TRUE 		fBodAc_std_Y			grvity (g)
-271 		fBodyAcc-std()-Z 	 	FALSE 		TRUE 		fBodAc_std_Z			grvity (g)
-272 		fBodyAcc-mad()-X 	 	FALSE		FALSE 		fBodAc_mad_X			grvity (g)
-273 		fBodyAcc-mad()-Y 	 	FALSE		FALSE 		fBodAc_mad_Y			grvity (g)
-274 		fBodyAcc-mad()-Z 	 	FALSE		FALSE 		fBodAc_mad_Z			grvity (g)
-275 		fBodyAcc-max()-X 	 	FALSE		FALSE 		fBodAc_max_X			grvity (g)
-276 		fBodyAcc-max()-Y 	 	FALSE		FALSE 		fBodAc_max_Y			grvity (g)
-277 		fBodyAcc-max()-Z 	 	FALSE		FALSE 		fBodAc_max_Z			grvity (g)
-278 		fBodyAcc-min()-X 	 	FALSE		FALSE 		fBodAc_min_X			grvity (g)
-279 		fBodyAcc-min()-Y 	 	FALSE		FALSE 		fBodAc_min_Y			grvity (g)
-280 		fBodyAcc-min()-Z 	 	FALSE		FALSE 		fBodAc_min_Z			grvity (g)
-281 		fBodyAcc-sma() 	 		FALSE		FALSE 		fBodAc_sma			grvity (g)
-282 		fBodyAcc-energy()-X 	 	FALSE		FALSE 		fBodAc_ergy_X			grvity (g)
-283 		fBodyAcc-energy()-Y 	 	FALSE		FALSE 		fBodAc_ergy_Y			grvity (g)
-284 		fBodyAcc-energy()-Z 	 	FALSE		FALSE 		fBodAc_ergy_Z			grvity (g)
-285 		fBodyAcc-iqr()-X 	 	FALSE		FALSE 		fBodAc_iqr_X			grvity (g)
-286 		fBodyAcc-iqr()-Y 	 	FALSE		FALSE 		fBodAc_iqr_Y			grvity (g)
-287 		fBodyAcc-iqr()-Z 	 	FALSE		FALSE 		fBodAc_iqr_Z			grvity (g)
-288 		fBodyAcc-entropy()-X 	 	FALSE		FALSE 		fBodAc_entrpy_X			grvity (g)
-289 		fBodyAcc-entropy()-Y 	 	FALSE		FALSE 		fBodAc_entrpy_Y			grvity (g)
-290 		fBodyAcc-entropy()-Z 	 	FALSE		FALSE 		fBodAc_entrpy_Z			grvity (g)
-291 		fBodyAcc-maxInds-X 	 	FALSE		FALSE 		fBodAc_maxInds_X		grvity (g)
-292 		fBodyAcc-maxInds-Y 	 	FALSE		FALSE 		fBodAc_maxInds_Y		grvity (g)
-293 		fBodyAcc-maxInds-Z 	 	FALSE		FALSE 		fBodAc_maxInds_Z		grvity (g)
-294 		fBodyAcc-meanFreq()-X  		TRUE		FALSE 		fBodAc_meanFreq_X		grvity (g)
-295 		fBodyAcc-meanFreq()-Y  		TRUE		FALSE 		fBodAc_meanFreq_Y		grvity (g)
-296 		fBodyAcc-meanFreq()-Z  		TRUE		FALSE 		fBodAc_meanFreq_Z		grvity (g)
-297 		fBodyAcc-skewness()-X 	 	FALSE		FALSE 		fBodAc_skew_X			grvity (g)
-298 		fBodyAcc-kurtosis()-X 	 	FALSE		FALSE 		fBodAc_kurt_X			grvity (g)
-299 		fBodyAcc-skewness()-Y 	 	FALSE		FALSE 		fBodAc_skew_Y			grvity (g)
-300 		fBodyAcc-kurtosis()-Y 	 	FALSE		FALSE 		fBodAc_kurt_Y			grvity (g)
+Orig_COL	Previous_Name			      IsMeanVar	IsStdevVar	ShorterVariableName	    	Units
+--------	-------------------	    ---------	----------	----------------------		-------
+201 	tBodyAccMag-mean() 		        TRUE 		  FALSE 		tBodAcMag_mean			      grvity (g)
+202 	tBodyAccMag-std() 	 	        FALSE 		TRUE 		  tBodAcMag_std			        grvity (g)
+203 	tBodyAccMag-mad() 	 	        FALSE	  	FALSE 		tBodAcMag_mad		        	grvity (g)
+204 	tBodyAccMag-max() 	 	        FALSE		  FALSE 		tBodAcMag_max			        grvity (g)
+205 	tBodyAccMag-min() 	 	        FALSE	  	FALSE 		tBodAcMag_min		        	grvity (g)
+206 	tBodyAccMag-sma() 	        	FALSE	  	FALSE 		tBodAcMag_sma		        	grvity (g)
+207 	tBodyAccMag-energy() 	      	FALSE		  FALSE 		tBodAcMag_ergy	      		grvity (g)
+208 	tBodyAccMag-iqr() 	 	        FALSE	  	FALSE 		tBodAcMag_iqr		        	grvity (g)
+209 	tBodyAccMag-entropy() 	 	    FALSE	  	FALSE 		tBodAcMag_entrpy	      	grvity (g)
+210 	tBodyAccMag-arCoeff()1 	    	FALSE	  	FALSE 		tBodAcMag_arCoeff1	    	grvity (g)
+211 	tBodyAccMag-arCoeff()2 	    	FALSE	  	FALSE 		tBodAcMag_arCoeff2		    grvity (g)
+212 	tBodyAccMag-arCoeff()3 	 	    FALSE	  	FALSE 		tBodAcMag_arCoeff3		    grvity (g)
+213 	tBodyAccMag-arCoeff()4 	    	FALSE		  FALSE 		tBodAcMag_arCoeff4		    grvity (g)
+214 	tGravityAccMag-mean()		      TRUE		  FALSE 		tGrvAcMag_mean			      grvity (g)
+215 	tGravityAccMag-std() 	      	FALSE 		TRUE 	  	tGrvAcMag_std			        grvity (g)
+216 	tGravityAccMag-mad() 	 	      FALSE		  FALSE 		tGrvAcMag_mad			        grvity (g)
+217 	tGravityAccMag-max() 	 	      FALSE		  FALSE 		tGrvAcMag_max		        	grvity (g)
+218 	tGravityAccMag-min() 	 	      FALSE	  	FALSE 		tGrvAcMag_min			        grvity (g)
+219 	tGravityAccMag-sma() 	 	      FALSE	  	FALSE 		tGrvAcMag_sma		        	grvity (g)
+220 	tGravityAccMag-energy() 	    FALSE	  	FALSE 		tGrvAcMag_ergy		       	grvity (g)
+221 	tGravityAccMag-iqr() 	 	      FALSE		  FALSE 		tGrvAcMag_iqr		        	grvity (g)
+222 	tGravityAccMag-entropy() 	    FALSE	  	FALSE 		tGrvAcMag_entrpy	      	grvity (g)
+223 	tGravityAccMag-arCoeff()1   	FALSE	  	FALSE 		tGrvAcMag_arCoeff1	    	grvity (g)
+224 	tGravityAccMag-arCoeff()2 	  FALSE	  	FALSE 		tGrvAcMag_arCoeff2	    	grvity (g)
+225 	tGravityAccMag-arCoeff()3   	FALSE	  	FALSE 		tGrvAcMag_arCoeff3	    	grvity (g)
+226 	tGravityAccMag-arCoeff()4   	FALSE	  	FALSE 		tGrvAcMag_arCoeff4	    	grvity (g)
+227 	tBodyAccJerkMag-mean()		    TRUE	  	FALSE 		tBodAcJrkMag_mean	      	grvity (g)
+228 	tBodyAccJerkMag-std() 	    	FALSE 		TRUE 	  	tBodAcJrkMag_std	      	grvity (g)
+229 	tBodyAccJerkMag-mad() 	 	    FALSE	  	FALSE 		tBodAcJrkMag_mad	      	grvity (g)
+230 	tBodyAccJerkMag-max() 	 	    FALSE	  	FALSE 		tBodAcJrkMag_max	      	grvity (g)
+231 	tBodyAccJerkMag-min() 	    	FALSE	  	FALSE 		tBodAcJrkMag_min	       	grvity (g)
+232 	tBodyAccJerkMag-sma() 	 	    FALSE	  	FALSE 		tBodAcJrkMag_sma	      	grvity (g)
+233 	tBodyAccJerkMag-energy()    	FALSE	  	FALSE 		tBodAcJrkMag_ergy	      	grvity (g)
+234 	tBodyAccJerkMag-iqr() 	 	    FALSE	  	FALSE 		tBodAcJrkMag_iqr	      	grvity (g)
+235 	tBodyAccJerkMag-entropy() 	  FALSE	  	FALSE 		tBodAcJrkMag_entrpy	    	grvity (g)
+236 	tBodyAccJerkMag-arCoeff()1  	FALSE	  	FALSE 		tBodAcJrkMag_arCoeff1	  	grvity (g)
+237 	tBodyAccJerkMag-arCoeff()2 	  FALSE	  	FALSE 		tBodAcJrkMag_arCoeff2	  	grvity (g)
+238 	tBodyAccJerkMag-arCoeff()3 	  FALSE	  	FALSE 		tBodAcJrkMag_arCoeff3	  	grvity (g)
+239 	tBodyAccJerkMag-arCoeff()4 	  FALSE	  	FALSE 		tBodAcJrkMag_arCoeff4	  	grvity (g)
+240 	tBodyGyroMag-mean()  	      	TRUE	  	FALSE 		tBodGyroMag_mean	      	rad/sec
+241 	tBodyGyroMag-std() 	 	        FALSE 		TRUE 	  	tBodGyroMag_std		      	rad/sec
+242 	tBodyGyroMag-mad() 	 	        FALSE		  FALSE 		tBodGyroMag_mad		      	rad/sec
+243 	tBodyGyroMag-max() 	        	FALSE	  	FALSE 		tBodGyroMag_max		      	rad/sec
+244 	tBodyGyroMag-min() 	 	        FALSE	  	FALSE 		tBodGyroMag_min		      	rad/sec
+245 	tBodyGyroMag-sma() 	 	        FALSE	  	FALSE 		tBodGyroMag_sma		      	rad/sec
+246 	tBodyGyroMag-energy() 	    	FALSE	  	FALSE 		tBodGyroMag_ergy	      	rad/sec
+247 	tBodyGyroMag-iqr() 	 	        FALSE	  	FALSE 		tBodGyroMag_iqr		      	rad/sec
+248 	tBodyGyroMag-entropy() 	    	FALSE	  	FALSE 		tBodGyroMag_entrpy	    	rad/sec
+249 	tBodyGyroMag-arCoeff()1     	FALSE	  	FALSE 		tBodGyroMag_arCoeff1	  	rad/sec
+250 	tBodyGyroMag-arCoeff()2     	FALSE	  	FALSE 		tBodGyroMag_arCoeff2	  	rad/sec
 
-Orig_COL	Previous_Name			IsMeanVar	IsStdevVar	ShorterVariableName		Units
---------	--------------------------	---------	----------	----------------------		-------
-301 		fBodyAcc-skewness()-Z 	 	FALSE		FALSE 		fBodAc_skew_Z			grvity (g)
-302 		fBodyAcc-kurtosis()-Z 	 	FALSE		FALSE 		fBodAc_kurt_Z			grvity (g)
-303 		fBodyAcc-bandsEnergy()-1,8 	FALSE		FALSE 		fBodAc_bandsErgy_1.8		grvity (g)
-304 		fBodyAcc-bandsEnergy()-9,16 	FALSE		FALSE 		fBodAc_bandsErgy_9.16		grvity (g)
-305 		fBodyAcc-bandsEnergy()-17,24 	FALSE		FALSE 		fBodAc_bandsErgy_17.24		grvity (g)
-306 		fBodyAcc-bandsEnergy()-25,32 	FALSE		FALSE 		fBodAc_bandsErgy_25.32		grvity (g)
-307 		fBodyAcc-bandsEnergy()-33,40 	FALSE		FALSE 		fBodAc_bandsErgy_33.40		grvity (g)
-308 		fBodyAcc-bandsEnergy()-41,48 	FALSE		FALSE 		fBodAc_bandsErgy_41.48		grvity (g)
-309 		fBodyAcc-bandsEnergy()-49,56 	FALSE		FALSE 		fBodAc_bandsErgy_49.56		grvity (g)
-310 		fBodyAcc-bandsEnergy()-57,64 	FALSE		FALSE 		fBodAc_bandsErgy_57.64		grvity (g)
-311 		fBodyAcc-bandsEnergy()-1,16 	FALSE		FALSE 		fBodAc_bandsErgy_1.16		grvity (g)
-312 		fBodyAcc-bandsEnergy()-17,32 	FALSE		FALSE 		fBodAc_bandsErgy_17.32		grvity (g)
-313 		fBodyAcc-bandsEnergy()-33,48 	FALSE		FALSE 		fBodAc_bandsErgy_33.48		grvity (g)
-314 		fBodyAcc-bandsEnergy()-49,64 	FALSE		FALSE 		fBodAc_bandsErgy_49.64		grvity (g)
-315 		fBodyAcc-bandsEnergy()-1,24 	FALSE		FALSE 		fBodAc_bandsErgy_1.24		grvity (g)
-316 		fBodyAcc-bandsEnergy()-25,48 	FALSE		FALSE 		fBodAc_bandsErgy_25.48		grvity (g)
-317 		fBodyAcc-bandsEnergy()-1,8 	FALSE		FALSE 		fBodAc_bandsErgy_1.8		grvity (g)
-318 		fBodyAcc-bandsEnergy()-9,16 	FALSE		FALSE 		fBodAc_bandsErgy_9.16		grvity (g)
-319 		fBodyAcc-bandsEnergy()-17,24 	FALSE		FALSE 		fBodAc_bandsErgy_17.24		grvity (g)
-320 		fBodyAcc-bandsEnergy()-25,32 	FALSE		FALSE 		fBodAc_bandsErgy_25.32		grvity (g)
-321 		fBodyAcc-bandsEnergy()-33,40 	FALSE		FALSE 		fBodAc_bandsErgy_33.40		grvity (g)
-322 		fBodyAcc-bandsEnergy()-41,48 	FALSE		FALSE 		fBodAc_bandsErgy_41.48		grvity (g)
-323 		fBodyAcc-bandsEnergy()-49,56 	FALSE		FALSE 		fBodAc_bandsErgy_49.56		grvity (g)
-324 		fBodyAcc-bandsEnergy()-57,64 	FALSE		FALSE 		fBodAc_bandsErgy_57.64		grvity (g)
-325 		fBodyAcc-bandsEnergy()-1,16 	FALSE		FALSE 		fBodAc_bandsErgy_1.16		grvity (g)
-326 		fBodyAcc-bandsEnergy()-17,32 	FALSE		FALSE 		fBodAc_bandsErgy_17.32		grvity (g)
-327 		fBodyAcc-bandsEnergy()-33,48 	FALSE		FALSE 		fBodAc_bandsErgy_33.48		grvity (g)
-328 		fBodyAcc-bandsEnergy()-49,64 	FALSE		FALSE 		fBodAc_bandsErgy_49.64		grvity (g)
-329 		fBodyAcc-bandsEnergy()-1,24 	FALSE		FALSE 		fBodAc_bandsErgy_1.24		grvity (g)
-330 		fBodyAcc-bandsEnergy()-25,48 	FALSE		FALSE 		fBodAc_bandsErgy_25.48		grvity (g)
-331 		fBodyAcc-bandsEnergy()-1,8 	FALSE		FALSE 		fBodAc_bandsErgy_1.8		grvity (g)
-332 		fBodyAcc-bandsEnergy()-9,16 	FALSE		FALSE 		fBodAc_bandsErgy_9.16		grvity (g)
-333 		fBodyAcc-bandsEnergy()-17,24 	FALSE		FALSE 		fBodAc_bandsErgy_17.24		grvity (g)
-334 		fBodyAcc-bandsEnergy()-25,32 	FALSE		FALSE 		fBodAc_bandsErgy_25.32		grvity (g)
-335 		fBodyAcc-bandsEnergy()-33,40 	FALSE		FALSE 		fBodAc_bandsErgy_33.40		grvity (g)
-336 		fBodyAcc-bandsEnergy()-41,48 	FALSE		FALSE 		fBodAc_bandsErgy_41.48		grvity (g)
-337 		fBodyAcc-bandsEnergy()-49,56 	FALSE		FALSE 		fBodAc_bandsErgy_49.56		grvity (g)
-338 		fBodyAcc-bandsEnergy()-57,64 	FALSE		FALSE 		fBodAc_bandsErgy_57.64		grvity (g)
-339 		fBodyAcc-bandsEnergy()-1,16 	FALSE		FALSE 		fBodAc_bandsErgy_1.16		grvity (g)
-340 		fBodyAcc-bandsEnergy()-17,32 	FALSE		FALSE 		fBodAc_bandsErgy_17.32		grvity (g)
-341 		fBodyAcc-bandsEnergy()-33,48 	FALSE		FALSE 		fBodAc_bandsErgy_33.48		grvity (g)
-342 		fBodyAcc-bandsEnergy()-49,64 	FALSE		FALSE 		fBodAc_bandsErgy_49.64		grvity (g)
-343 		fBodyAcc-bandsEnergy()-1,24 	FALSE		FALSE 		fBodAc_bandsErgy_1.24		grvity (g)
-344 		fBodyAcc-bandsEnergy()-25,48 	FALSE		FALSE 		fBodAc_bandsErgy_25.48		grvity (g)
-345 		fBodyAccJerk-mean()-X  		TRUE		FALSE 		fBodAcJrk_mean_X		grvity (g)
-346 		fBodyAccJerk-mean()-Y  		TRUE		FALSE 		fBodAcJrk_mean_Y		grvity (g)
-347 		fBodyAccJerk-mean()-Z  		TRUE		FALSE 		fBodAcJrk_mean_Z		grvity (g)
-348 		fBodyAccJerk-std()-X 	 	FALSE 		TRUE 		fBodAcJrk_std_X			grvity (g)
-349 		fBodyAccJerk-std()-Y 	 	FALSE 		TRUE 		fBodAcJrk_std_Y			grvity (g)
-350 		fBodyAccJerk-std()-Z 	 	FALSE 		TRUE 		fBodAcJrk_std_Z			grvity (g)
+Orig_COL	Previous_Name			      IsMeanVar	IsStdevVar	ShorterVariableName		    Units
+--------	--------------------	  ---------	----------	----------------------		-------
+251 	tBodyGyroMag-arCoeff()3 	    FALSE		  FALSE 		tBodGyroMag_arCoeff3		  rad/sec
+252 	tBodyGyroMag-arCoeff()4 	    FALSE		  FALSE 		tBodGyroMag_arCoeff4		  rad/sec
+253 	tBodyGyroJerkMag-mean()  	    TRUE		  FALSE 		tBodGyroJrkMag_mean		    rad/sec
+254 	tBodyGyroJerkMag-std() 	 	    FALSE 		TRUE 	  	tBodGyroJrkMag_std		    rad/sec
+255 	tBodyGyroJerkMag-mad() 	 	    FALSE		  FALSE 		tBodGyroJrkMag_mad		    rad/sec
+256 	tBodyGyroJerkMag-max() 	 	    FALSE		  FALSE 		tBodGyroJrkMag_max		    rad/sec
+257 	tBodyGyroJerkMag-min() 	 	    FALSE		  FALSE 		tBodGyroJrkMag_min		    rad/sec
+258 	tBodyGyroJerkMag-sma() 	 	    FALSE	  	FALSE 		tBodGyroJrkMag_sma		    rad/sec
+259 	tBodyGyroJerkMag-energy() 	  FALSE	  	FALSE 		tBodGyroJrkMag_ergy		    rad/sec
+260 	tBodyGyroJerkMag-iqr() 	 	    FALSE		  FALSE 		tBodGyroJrkMag_iqr		    rad/sec
+261 	tBodyGyroJerkMag-entropy() 	  FALSE		  FALSE 		tBodGyroJrkMag_entrpy		  rad/sec
+262 	tBodyGyroJerkMag-arCoeff()1 	FALSE		  FALSE 		tBodGyroJrkMag_arCoeff1		rad/sec
+263 	tBodyGyroJerkMag-arCoeff()2 	FALSE		  FALSE 		tBodGyroJrkMag_arCoeff2		rad/sec
+264 	tBodyGyroJerkMag-arCoeff()3 	FALSE		  FALSE 		tBodGyroJrkMag_arCoeff3		rad/sec
+265 	tBodyGyroJerkMag-arCoeff()4 	FALSE		  FALSE 		tBodGyroJrkMag_arCoeff4		rad/sec
+266 	fBodyAcc-mean()-X  		        TRUE		  FALSE 		fBodAc_mean_X		        	grvity (g)
+267 	fBodyAcc-mean()-Y  		        TRUE		  FALSE 		fBodAc_mean_Y			        grvity (g)
+268 	fBodyAcc-mean()-Z  		        TRUE		  FALSE 		fBodAc_mean_Z		          grvity (g)
+269 	fBodyAcc-std()-X 	 	          FALSE 		TRUE 		  fBodAc_std_X			        grvity (g)
+270 	fBodyAcc-std()-Y 	          	FALSE 		TRUE 		  fBodAc_std_Y			        grvity (g)
+271 	fBodyAcc-std()-Z 	 	          FALSE 		TRUE 		  fBodAc_std_Z			        grvity (g)
+272 	fBodyAcc-mad()-X 	          	FALSE		  FALSE 		fBodAc_mad_X			        grvity (g)
+273 	fBodyAcc-mad()-Y 	 	          FALSE		  FALSE 		fBodAc_mad_Y			        grvity (g)
+274 	fBodyAcc-mad()-Z 	 	          FALSE		  FALSE 		fBodAc_mad_Z		        	grvity (g)
+275 	fBodyAcc-max()-X 	 	          FALSE		  FALSE 		fBodAc_max_X			        grvity (g)
+276 	fBodyAcc-max()-Y 	 	          FALSE		  FALSE 		fBodAc_max_Y			        grvity (g)
+277 	fBodyAcc-max()-Z 	 	          FALSE		  FALSE 		fBodAc_max_Z			        grvity (g)
+278 	fBodyAcc-min()-X 	 	          FALSE	  	FALSE 		fBodAc_min_X		          grvity (g)
+279 	fBodyAcc-min()-Y 	 	          FALSE		  FALSE 		fBodAc_min_Y		        	grvity (g)
+280 	fBodyAcc-min()-Z 	 	          FALSE		  FALSE 		fBodAc_min_Z			        grvity (g)
+281 	fBodyAcc-sma() 	 		          FALSE	  	FALSE 		fBodAc_sma		          	grvity (g)
+282 	fBodyAcc-energy()-X 	 	      FALSE	  	FALSE 		fBodAc_ergy_X			        grvity (g)
+283 	fBodyAcc-energy()-Y 	 	      FALSE	  	FALSE 		fBodAc_ergy_Y		        	grvity (g)
+284 	fBodyAcc-energy()-Z 	 	      FALSE	  	FALSE 		fBodAc_ergy_Z		        	grvity (g)
+285 	fBodyAcc-iqr()-X 	 	          FALSE	  	FALSE 		fBodAc_iqr_X			        grvity (g)
+286 	fBodyAcc-iqr()-Y 	 	          FALSE		  FALSE 		fBodAc_iqr_Y		        	grvity (g)
+287 	fBodyAcc-iqr()-Z 	 	          FALSE	  	FALSE 		fBodAc_iqr_Z			        grvity (g)
+288 	fBodyAcc-entropy()-X 	 	      FALSE	  	FALSE 		fBodAc_entrpy_X			      grvity (g)
+289 	fBodyAcc-entropy()-Y 	 	      FALSE	  	FALSE 		fBodAc_entrpy_Y		        grvity (g)
+290 	fBodyAcc-entropy()-Z 	 	      FALSE	  	FALSE 		fBodAc_entrpy_Z			      grvity (g)
+291 	fBodyAcc-maxInds-X 	 	        FALSE	  	FALSE 		fBodAc_maxInds_X		      grvity (g)
+292 	fBodyAcc-maxInds-Y 	 	        FALSE	  	FALSE 		fBodAc_maxInds_Y		      grvity (g)
+293 	fBodyAcc-maxInds-Z 	 	        FALSE	  	FALSE 		fBodAc_maxInds_Z		      grvity (g)
+294 	fBodyAcc-meanFreq()-X  		    TRUE	  	FALSE 		fBodAc_meanFreq_X		      grvity (g)
+295 	fBodyAcc-meanFreq()-Y  		    TRUE	  	FALSE 		fBodAc_meanFreq_Y		      grvity (g)
+296 	fBodyAcc-meanFreq()-Z  		    TRUE	  	FALSE 		fBodAc_meanFreq_Z		      grvity (g)
+297 	fBodyAcc-skewness()-X 	 	    FALSE	  	FALSE 		fBodAc_skew_X			        grvity (g)
+298 	fBodyAcc-kurtosis()-X 	 	    FALSE		  FALSE 		fBodAc_kurt_X			        grvity (g)
+299 	fBodyAcc-skewness()-Y 	 	    FALSE		  FALSE 		fBodAc_skew_Y			        grvity (g)
+300 	fBodyAcc-kurtosis()-Y 	 	    FALSE		  FALSE 		fBodAc_kurt_Y			        grvity (g)
 
-Orig_COL	Previous_Name			IsMeanVar	IsStdevVar	ShorterVariableName		Units
---------	--------------------------	---------	----------	----------------------		-------
-351 		fBodyAccJerk-mad()-X 	 	FALSE		FALSE 		fBodAcJrk_mad_X			grvity (g)
-352 		fBodyAccJerk-mad()-Y 	 	FALSE		FALSE 		fBodAcJrk_mad_Y			grvity (g)
-353 		fBodyAccJerk-mad()-Z 	 	FALSE		FALSE 		fBodAcJrk_mad_Z			grvity (g)
-354 		fBodyAccJerk-max()-X 	 	FALSE		FALSE 		fBodAcJrk_max_X			grvity (g)
-355 		fBodyAccJerk-max()-Y 	 	FALSE		FALSE 		fBodAcJrk_max_Y			grvity (g)
-356 		fBodyAccJerk-max()-Z 	 	FALSE		FALSE 		fBodAcJrk_max_Z			grvity (g)
-357 		fBodyAccJerk-min()-X 	 	FALSE		FALSE 		fBodAcJrk_min_X			grvity (g)
-358 		fBodyAccJerk-min()-Y 	 	FALSE		FALSE 		fBodAcJrk_min_Y			grvity (g)
-359 		fBodyAccJerk-min()-Z 	 	FALSE		FALSE 		fBodAcJrk_min_Z			grvity (g)
-360 		fBodyAccJerk-sma() 	 	FALSE		FALSE 		fBodAcJrk_sma			grvity (g)
-361 		fBodyAccJerk-energy()-X 	FALSE		FALSE 		fBodAcJrk_ergy_X		grvity (g)
-362 		fBodyAccJerk-energy()-Y 	FALSE		FALSE 		fBodAcJrk_ergy_Y		grvity (g)
-363 		fBodyAccJerk-energy()-Z 	FALSE		FALSE 		fBodAcJrk_ergy_Z		grvity (g)
-364 		fBodyAccJerk-iqr()-X 	 	FALSE		FALSE 		fBodAcJrk_iqr_X			grvity (g)
-365 		fBodyAccJerk-iqr()-Y 	 	FALSE		FALSE 		fBodAcJrk_iqr_Y			grvity (g)
-366 		fBodyAccJerk-iqr()-Z 	 	FALSE		FALSE 		fBodAcJrk_iqr_Z			grvity (g)
-367 		fBodyAccJerk-entropy()-X 	FALSE		FALSE 		fBodAcJrk_entrpy_X		grvity (g)
-368 		fBodyAccJerk-entropy()-Y 	FALSE		FALSE 		fBodAcJrk_entrpy_Y		grvity (g)
-369 		fBodyAccJerk-entropy()-Z 	FALSE		FALSE 		fBodAcJrk_entrpy_Z		grvity (g)
-370 		fBodyAccJerk-maxInds-X 	 	FALSE		FALSE 		fBodAcJrk_maxInds_X		grvity (g)
-371 		fBodyAccJerk-maxInds-Y 	 	FALSE		FALSE 		fBodAcJrk_maxInds_Y		grvity (g)
-372 		fBodyAccJerk-maxInds-Z 	 	FALSE		FALSE 		fBodAcJrk_maxInds_Z		grvity (g)
-373 		fBodyAccJerk-meanFreq()-X  	TRUE		FALSE 		fBodAcJrk_meanFreq_X		grvity (g)
-374 		fBodyAccJerk-meanFreq()-Y  	TRUE		FALSE 		fBodAcJrk_meanFreq_Y		grvity (g)
-375 		fBodyAccJerk-meanFreq()-Z  	TRUE		FALSE 		fBodAcJrk_meanFreq_Z		grvity (g)
-376 		fBodyAccJerk-skewness()-X 	FALSE		FALSE 		fBodAcJrk_skew_X		grvity (g)
-377 		fBodyAccJerk-kurtosis()-X 	FALSE		FALSE 		fBodAcJrk_kurt_X		grvity (g)
-378 		fBodyAccJerk-skewness()-Y 	FALSE		FALSE 		fBodAcJrk_skew_Y		grvity (g)
-379 		fBodyAccJerk-kurtosis()-Y 	FALSE		FALSE 		fBodAcJrk_kurt_Y		grvity (g)
-380 		fBodyAccJerk-skewness()-Z 	FALSE		FALSE 		fBodAcJrk_skew_Z		grvity (g)
-381 		fBodyAccJerk-kurtosis()-Z 	 FALSE		FALSE 		fBodAcJrk_kurt_Z		grvity (g)
-382 		fBodyAccJerk-bandsEnergy()-1,8 	 FALSE		FALSE 		fBodAcJrk_bandsErgy_1.8		grvity (g)
-383 		fBodyAccJerk-bandsEnergy()-9,16  FALSE		FALSE 		fBodAcJrk_bandsErgy_9.16	grvity (g)
-384 		fBodyAccJerk-bandsEnergy()-17,24 FALSE		FALSE 		fBodAcJrk_bandsErgy_17.24	grvity (g)
-385 		fBodyAccJerk-bandsEnergy()-25,32 FALSE		FALSE 		fBodAcJrk_bandsErgy_25.32	grvity (g)
-386 		fBodyAccJerk-bandsEnergy()-33,40 FALSE		FALSE 		fBodAcJrk_bandsErgy_33.40	grvity (g)
-387 		fBodyAccJerk-bandsEnergy()-41,48 FALSE		FALSE 		fBodAcJrk_bandsErgy_41.48	grvity (g)
-388 		fBodyAccJerk-bandsEnergy()-49,56 FALSE		FALSE 		fBodAcJrk_bandsErgy_49.56	grvity (g)
-389 		fBodyAccJerk-bandsEnergy()-57,64 FALSE		FALSE 		fBodAcJrk_bandsErgy_57.64	grvity (g)
-390 		fBodyAccJerk-bandsEnergy()-1,16  FALSE		FALSE 		fBodAcJrk_bandsErgy_1.16	grvity (g)
-391 		fBodyAccJerk-bandsEnergy()-17,32 FALSE		FALSE 		fBodAcJrk_bandsErgy_17.32	grvity (g)
-392 		fBodyAccJerk-bandsEnergy()-33,48 FALSE		FALSE 		fBodAcJrk_bandsErgy_33.48	grvity (g)
-393 		fBodyAccJerk-bandsEnergy()-49,64 FALSE		FALSE 		fBodAcJrk_bandsErgy_49.64	grvity (g)
-394 		fBodyAccJerk-bandsEnergy()-1,24  FALSE		FALSE 		fBodAcJrk_bandsErgy_1.24	grvity (g)
-395 		fBodyAccJerk-bandsEnergy()-25,48 FALSE		FALSE 		fBodAcJrk_bandsErgy_25.48	grvity (g)
-396 		fBodyAccJerk-bandsEnergy()-1,8 	 FALSE		FALSE 		fBodAcJrk_bandsErgy_1.8		grvity (g)
-397 		fBodyAccJerk-bandsEnergy()-9,16  FALSE		FALSE 		fBodAcJrk_bandsErgy_9.16	grvity (g)
-398 		fBodyAccJerk-bandsEnergy()-17,24 FALSE		FALSE 		fBodAcJrk_bandsErgy_17.24	grvity (g)
-399 		fBodyAccJerk-bandsEnergy()-25,32 FALSE		FALSE 		fBodAcJrk_bandsErgy_25.32	grvity (g)
-400 		fBodyAccJerk-bandsEnergy()-33,40 FALSE		FALSE 		fBodAcJrk_bandsErgy_33.40	grvity (g)
+Orig_COL	Previous_Name			      IsMeanVar	IsStdevVar	ShorterVariableName		      Units
+--------	-------------------	    ---------	----------	----------------------		-------
+301 	fBodyAcc-skewness()-Z 	 	    FALSE		  FALSE 		fBodAc_skew_Z			        grvity (g)
+302 	fBodyAcc-kurtosis()-Z 	 	    FALSE		  FALSE 		fBodAc_kurt_Z			        grvity (g)
+303 	fBodyAcc-bandsEnergy()-1,8  	FALSE	  	FALSE 		fBodAc_bandsErgy_1.8		  grvity (g)
+304 	fBodyAcc-bandsEnergy()-9,16 	FALSE		  FALSE 		fBodAc_bandsErgy_9.16		  grvity (g)
+305 	fBodyAcc-bandsEnergy()-17,24 	FALSE	  	FALSE 		fBodAc_bandsErgy_17.24		grvity (g)
+306 	fBodyAcc-bandsEnergy()-25,32 	FALSE	  	FALSE 		fBodAc_bandsErgy_25.32		grvity (g)
+307 	fBodyAcc-bandsEnergy()-33,40 	FALSE	   	FALSE 		fBodAc_bandsErgy_33.40		grvity (g)
+308 	fBodyAcc-bandsEnergy()-41,48 	FALSE	  	FALSE 		fBodAc_bandsErgy_41.48		grvity (g)
+309 	fBodyAcc-bandsEnergy()-49,56 	FALSE	  	FALSE 		fBodAc_bandsErgy_49.56		grvity (g)
+310 	fBodyAcc-bandsEnergy()-57,64 	FALSE		  FALSE 		fBodAc_bandsErgy_57.64		grvity (g)
+311 	fBodyAcc-bandsEnergy()-1,16 	FALSE	  	FALSE 		fBodAc_bandsErgy_1.16		  grvity (g)
+312 	fBodyAcc-bandsEnergy()-17,32 	FALSE	  	FALSE 		fBodAc_bandsErgy_17.32		grvity (g)
+313 	fBodyAcc-bandsEnergy()-33,48 	FALSE		  FALSE 		fBodAc_bandsErgy_33.48		grvity (g)
+314 	fBodyAcc-bandsEnergy()-49,64 	FALSE	  	FALSE 		fBodAc_bandsErgy_49.64		grvity (g)
+315 	fBodyAcc-bandsEnergy()-1,24 	FALSE		  FALSE 		fBodAc_bandsErgy_1.24		  grvity (g)
+316 	fBodyAcc-bandsEnergy()-25,48 	FALSE	  	FALSE 		fBodAc_bandsErgy_25.48		grvity (g)
+317 	fBodyAcc-bandsEnergy()-1,8 	  FALSE		  FALSE 		fBodAc_bandsErgy_1.8	    grvity (g)
+318 	fBodyAcc-bandsEnergy()-9,16 	FALSE		  FALSE 		fBodAc_bandsErgy_9.16		  grvity (g)
+319 	fBodyAcc-bandsEnergy()-17,24 	FALSE	  	FALSE 		fBodAc_bandsErgy_17.24		grvity (g)
+320 	fBodyAcc-bandsEnergy()-25,32 	FALSE	  	FALSE 		fBodAc_bandsErgy_25.32		grvity (g)
+321 	fBodyAcc-bandsEnergy()-33,40 	FALSE	  	FALSE 		fBodAc_bandsErgy_33.40		grvity (g)
+322 	fBodyAcc-bandsEnergy()-41,48 	FALSE	  	FALSE 		fBodAc_bandsErgy_41.48		grvity (g)
+323 	fBodyAcc-bandsEnergy()-49,56 	FALSE		  FALSE 		fBodAc_bandsErgy_49.56		grvity (g)
+324 	fBodyAcc-bandsEnergy()-57,64 	FALSE	  	FALSE 		fBodAc_bandsErgy_57.64		grvity (g)
+325 	fBodyAcc-bandsEnergy()-1,16 	FALSE	  	FALSE 		fBodAc_bandsErgy_1.16		  grvity (g)
+326 	fBodyAcc-bandsEnergy()-17,32 	FALSE	  	FALSE 		fBodAc_bandsErgy_17.32	 	grvity (g)
+327 	fBodyAcc-bandsEnergy()-33,48 	FALSE	  	FALSE 		fBodAc_bandsErgy_33.48		grvity (g)
+328 	fBodyAcc-bandsEnergy()-49,64 	FALSE		  FALSE 		fBodAc_bandsErgy_49.64		grvity (g)
+329 	fBodyAcc-bandsEnergy()-1,24 	FALSE	  	FALSE 		fBodAc_bandsErgy_1.24		  grvity (g)
+330 	fBodyAcc-bandsEnergy()-25,48 	FALSE		  FALSE 		fBodAc_bandsErgy_25.48		grvity (g)
+331 	fBodyAcc-bandsEnergy()-1,8 	  FALSE	  	FALSE 		fBodAc_bandsErgy_1.8		  grvity (g)
+332 	fBodyAcc-bandsEnergy()-9,16 	FALSE	  	FALSE 		fBodAc_bandsErgy_9.16		  grvity (g)
+333 	fBodyAcc-bandsEnergy()-17,24 	FALSE	  	FALSE 		fBodAc_bandsErgy_17.24		grvity (g)
+334 	fBodyAcc-bandsEnergy()-25,32 	FALSE		  FALSE 		fBodAc_bandsErgy_25.32		grvity (g)
+335 	fBodyAcc-bandsEnergy()-33,40 	FALSE	  	FALSE 		fBodAc_bandsErgy_33.40		grvity (g)
+336 	fBodyAcc-bandsEnergy()-41,48 	FALSE	  	FALSE 		fBodAc_bandsErgy_41.48		grvity (g)
+337 	fBodyAcc-bandsEnergy()-49,56 	FALSE	  	FALSE 		fBodAc_bandsErgy_49.56		grvity (g)
+338 	fBodyAcc-bandsEnergy()-57,64 	FALSE		  FALSE 		fBodAc_bandsErgy_57.64		grvity (g)
+339 	fBodyAcc-bandsEnergy()-1,16 	FALSE	  	FALSE 		fBodAc_bandsErgy_1.16		  grvity (g)
+340 	fBodyAcc-bandsEnergy()-17,32 	FALSE	  	FALSE 		fBodAc_bandsErgy_17.32		grvity (g)
+341 	fBodyAcc-bandsEnergy()-33,48 	FALSE	  	FALSE 		fBodAc_bandsErgy_33.48		grvity (g)
+342 	fBodyAcc-bandsEnergy()-49,64 	FALSE		  FALSE 		fBodAc_bandsErgy_49.64		grvity (g)
+343 	fBodyAcc-bandsEnergy()-1,24 	FALSE		  FALSE 		fBodAc_bandsErgy_1.24		  grvity (g)
+344 	fBodyAcc-bandsEnergy()-25,48 	FALSE		  FALSE 		fBodAc_bandsErgy_25.48		grvity (g)
+345 	fBodyAccJerk-mean()-X  		    TRUE		  FALSE 		fBodAcJrk_mean_X		      grvity (g)
+346 	fBodyAccJerk-mean()-Y  		    TRUE		  FALSE 		fBodAcJrk_mean_Y		      grvity (g)
+347 	fBodyAccJerk-mean()-Z  		    TRUE		  FALSE 		fBodAcJrk_mean_Z		      grvity (g)
+348 	fBodyAccJerk-std()-X 	 	      FALSE 		TRUE 		  fBodAcJrk_std_X			      grvity (g)
+349 	fBodyAccJerk-std()-Y 	 	      FALSE 		TRUE 		  fBodAcJrk_std_Y			      grvity (g)
+350 	fBodyAccJerk-std()-Z 	 	      FALSE 		TRUE 		  fBodAcJrk_std_Z			      grvity (g)
 
-Orig_COL	Previous_Name			IsMeanVar	IsStdevVar	ShorterVariableName		Units
+Orig_COL	Previous_Name			      IsMeanVar	IsStdevVar	ShorterVariableName	        	Units
 --------	--------------------------	---------	----------	----------------------		-------
-401 		fBodyAccJerk-bandsEnergy()-41,48 FALSE		FALSE 		fBodAcJrk_bandsErgy_41.48	grvity (g)
-402 		fBodyAccJerk-bandsEnergy()-49,56 FALSE		FALSE 		fBodAcJrk_bandsErgy_49.56	grvity (g)
-403 		fBodyAccJerk-bandsEnergy()-57,64 FALSE		FALSE 		fBodAcJrk_bandsErgy_57.64	grvity (g)
-404 		fBodyAccJerk-bandsEnergy()-1,16  FALSE		FALSE 		fBodAcJrk_bandsErgy_1.16	grvity (g)
-405 		fBodyAccJerk-bandsEnergy()-17,32 FALSE		FALSE 		fBodAcJrk_bandsErgy_17.32	grvity (g)
-406 		fBodyAccJerk-bandsEnergy()-33,48 FALSE		FALSE 		fBodAcJrk_bandsErgy_33.48	grvity (g)
-407 		fBodyAccJerk-bandsEnergy()-49,64 FALSE		FALSE 		fBodAcJrk_bandsErgy_49.64	grvity (g)
-408 		fBodyAccJerk-bandsEnergy()-1,24  FALSE		FALSE 		fBodAcJrk_bandsErgy_1.24	grvity (g)
-409 		fBodyAccJerk-bandsEnergy()-25,48 FALSE		FALSE 		fBodAcJrk_bandsErgy_25.48	grvity (g)
-410 		fBodyAccJerk-bandsEnergy()-1,8 	 FALSE		FALSE 		fBodAcJrk_bandsErgy_1.8		grvity (g)
-411 		fBodyAccJerk-bandsEnergy()-9,16  FALSE		FALSE 		fBodAcJrk_bandsErgy_9.16	grvity (g)
-412 		fBodyAccJerk-bandsEnergy()-17,24 FALSE		FALSE 		fBodAcJrk_bandsErgy_17.24	grvity (g)
-413 		fBodyAccJerk-bandsEnergy()-25,32 FALSE		FALSE 		fBodAcJrk_bandsErgy_25.32	grvity (g)
-414 		fBodyAccJerk-bandsEnergy()-33,40 FALSE		FALSE 		fBodAcJrk_bandsErgy_33.40	grvity (g)
-415 		fBodyAccJerk-bandsEnergy()-41,48 FALSE		FALSE 		fBodAcJrk_bandsErgy_41.48	grvity (g)
-416 		fBodyAccJerk-bandsEnergy()-49,56 FALSE		FALSE 		fBodAcJrk_bandsErgy_49.56	grvity (g)
-417 		fBodyAccJerk-bandsEnergy()-57,64 FALSE		FALSE 		fBodAcJrk_bandsErgy_57.64	grvity (g)
-418 		fBodyAccJerk-bandsEnergy()-1,16  FALSE		FALSE 		fBodAcJrk_bandsErgy_1.16	grvity (g)
-419 		fBodyAccJerk-bandsEnergy()-17,32 FALSE		FALSE 		fBodAcJrk_bandsErgy_17.32	grvity (g)
-420 		fBodyAccJerk-bandsEnergy()-33,48 FALSE		FALSE 		fBodAcJrk_bandsErgy_33.48	grvity (g)
-421 		fBodyAccJerk-bandsEnergy()-49,64 FALSE		FALSE 		fBodAcJrk_bandsErgy_49.64	grvity (g)
-422 		fBodyAccJerk-bandsEnergy()-1,24  FALSE		FALSE 		fBodAcJrk_bandsErgy_1.24	grvity (g)
-423 		fBodyAccJerk-bandsEnergy()-25,48 FALSE		FALSE 		fBodAcJrk_bandsErgy_25.48	grvity (g)
-424 		fBodyGyro-mean()-X  		TRUE		FALSE 		fBodGyro_mean_X			rad/sec
-425 		fBodyGyro-mean()-Y  		TRUE		FALSE 		fBodGyro_mean_Y			rad/sec
-426 		fBodyGyro-mean()-Z  		TRUE		FALSE 		fBodGyro_mean_Z			rad/sec
-427 		fBodyGyro-std()-X 	 	FALSE 		TRUE 		fBodGyro_std_X			rad/sec
-428 		fBodyGyro-std()-Y 	 	FALSE 		TRUE 		fBodGyro_std_Y			rad/sec
-429 		fBodyGyro-std()-Z 	 	FALSE 		TRUE 		fBodGyro_std_Z			rad/sec
-430 		fBodyGyro-mad()-X 	 	FALSE		FALSE 		fBodGyro_mad_X			rad/sec
-431 		fBodyGyro-mad()-Y 	 	FALSE		FALSE 		fBodGyro_mad_Y			rad/sec
-432 		fBodyGyro-mad()-Z 	 	FALSE		FALSE 		fBodGyro_mad_Z			rad/sec
-433 		fBodyGyro-max()-X 	 	FALSE		FALSE 		fBodGyro_max_X			rad/sec
-434 		fBodyGyro-max()-Y 	 	FALSE		FALSE 		fBodGyro_max_Y			rad/sec
-435 		fBodyGyro-max()-Z 	 	FALSE		FALSE 		fBodGyro_max_Z			rad/sec
-436 		fBodyGyro-min()-X 	 	FALSE		FALSE 		fBodGyro_min_X			rad/sec
-437 		fBodyGyro-min()-Y 	 	FALSE		FALSE 		fBodGyro_min_Y			rad/sec
-438 		fBodyGyro-min()-Z 	 	FALSE		FALSE 		fBodGyro_min_Z			rad/sec
-439 		fBodyGyro-sma() 	 	FALSE		FALSE 		fBodGyro_sma			rad/sec
-440 		fBodyGyro-energy()-X 	 	FALSE		FALSE 		fBodGyro_ergy_X			rad/sec
-441 		fBodyGyro-energy()-Y 	 	FALSE		FALSE 		fBodGyro_ergy_Y			rad/sec
-442 		fBodyGyro-energy()-Z 	 	FALSE		FALSE 		fBodGyro_ergy_Z			rad/sec
-443 		fBodyGyro-iqr()-X 	 	FALSE		FALSE 		fBodGyro_iqr_X			rad/sec
-444 		fBodyGyro-iqr()-Y 	 	FALSE		FALSE 		fBodGyro_iqr_Y			rad/sec
-445 		fBodyGyro-iqr()-Z 	 	FALSE		FALSE 		fBodGyro_iqr_Z			rad/sec
-446 		fBodyGyro-entropy()-X 	 	FALSE		FALSE 		fBodGyro_entrpy_X		rad/sec
-447 		fBodyGyro-entropy()-Y 	 	FALSE		FALSE 		fBodGyro_entrpy_Y		rad/sec
-448 		fBodyGyro-entropy()-Z 	 	FALSE		FALSE 		fBodGyro_entrpy_Z		rad/sec
-449 		fBodyGyro-maxInds-X 	 	FALSE		FALSE 		fBodGyro_maxInds_X		rad/sec
-450 		fBodyGyro-maxInds-Y 	 	FALSE		FALSE 		fBodGyro_maxInds_Y		rad/sec
+351 	fBodyAccJerk-mad()-X 	 	      FALSE		  FALSE 		fBodAcJrk_mad_X			      grvity (g)
+352 	fBodyAccJerk-mad()-Y 	 	      FALSE		  FALSE 		fBodAcJrk_mad_Y			      grvity (g)
+353 	fBodyAccJerk-mad()-Z 	      	FALSE	  	FALSE 		fBodAcJrk_mad_Z			      grvity (g)
+354 	fBodyAccJerk-max()-X 	      	FALSE	  	FALSE 		fBodAcJrk_max_X			      grvity (g)
+355 	fBodyAccJerk-max()-Y 	 	      FALSE	  	FALSE 		fBodAcJrk_max_Y			      grvity (g)
+356 	fBodyAccJerk-max()-Z 	 	      FALSE	  	FALSE 		fBodAcJrk_max_Z			      grvity (g)
+357 	fBodyAccJerk-min()-X 	 	      FALSE	  	FALSE 		fBodAcJrk_min_X			      grvity (g)
+358 	fBodyAccJerk-min()-Y 	      	FALSE	  	FALSE 		fBodAcJrk_min_Y			      grvity (g)
+359 	fBodyAccJerk-min()-Z 	 	      FALSE	  	FALSE 		fBodAcJrk_min_Z			      grvity (g)
+360 	fBodyAccJerk-sma() 	 	        FALSE	  	FALSE 		fBodAcJrk_sma			        grvity (g)
+361 	fBodyAccJerk-energy()-X 	    FALSE	  	FALSE 		fBodAcJrk_ergy_X		      grvity (g)
+362 	fBodyAccJerk-energy()-Y 	    FALSE	  	FALSE 		fBodAcJrk_ergy_Y		      grvity (g)
+363 	fBodyAccJerk-energy()-Z 	    FALSE		  FALSE 		fBodAcJrk_ergy_Z		      grvity (g)
+364 	fBodyAccJerk-iqr()-X 	      	FALSE	  	FALSE 		fBodAcJrk_iqr_X			      grvity (g)
+365 	fBodyAccJerk-iqr()-Y 	      	FALSE	  	FALSE 		fBodAcJrk_iqr_Y			      grvity (g)
+366 	fBodyAccJerk-iqr()-Z 	 	      FALSE	  	FALSE 		fBodAcJrk_iqr_Z			      grvity (g)
+367 	fBodyAccJerk-entropy()-X    	FALSE	  	FALSE 		fBodAcJrk_entrpy_X		    grvity (g)
+368 	fBodyAccJerk-entropy()-Y 	    FALSE	  	FALSE 		fBodAcJrk_entrpy_Y		    grvity (g)
+369 	fBodyAccJerk-entropy()-Z 	    FALSE	  	FALSE 		fBodAcJrk_entrpy_Z		    grvity (g)
+370 	fBodyAccJerk-maxInds-X 	 	    FALSE	  	FALSE 		fBodAcJrk_maxInds_X		    grvity (g)
+371 	fBodyAccJerk-maxInds-Y 	 	    FALSE	  	FALSE 		fBodAcJrk_maxInds_Y		    grvity (g)
+372 	fBodyAccJerk-maxInds-Z 	 	    FALSE	  	FALSE 		fBodAcJrk_maxInds_Z		    grvity (g)
+373 	fBodyAccJerk-meanFreq()-X   	TRUE	  	FALSE 		fBodAcJrk_meanFreq_X		  grvity (g)
+374 	fBodyAccJerk-meanFreq()-Y   	TRUE	  	FALSE 		fBodAcJrk_meanFreq_Y		  grvity (g)
+375 	fBodyAccJerk-meanFreq()-Z  	  TRUE	  	FALSE 		fBodAcJrk_meanFreq_Z		  grvity (g)
+376 	fBodyAccJerk-skewness()-X   	FALSE	  	FALSE 		fBodAcJrk_skew_X		      grvity (g)
+377 	fBodyAccJerk-kurtosis()-X 	  FALSE	  	FALSE 		fBodAcJrk_kurt_X		      grvity (g)
+378 	fBodyAccJerk-skewness()-Y 	  FALSE	  	FALSE 		fBodAcJrk_skew_Y		      grvity (g)
+379 	fBodyAccJerk-kurtosis()-Y 	  FALSE 		FALSE 		fBodAcJrk_kurt_Y		      grvity (g)
+380 	fBodyAccJerk-skewness()-Z 	  FALSE 		FALSE 		fBodAcJrk_skew_Z		      grvity (g)
+381 	fBodyAccJerk-kurtosis()-Z 	  FALSE 		FALSE 		fBodAcJrk_kurt_Z		      grvity (g)
+382 	fBodyAccJerk-bandsEnergy()-1,8 	FALSE		FALSE 		fBodAcJrk_bandsErgy_1.8		grvity (g)
+383 	fBodyAccJerk-bandsEnergy()-9,16  FALSE	FALSE 		fBodAcJrk_bandsErgy_9.16	  grvity (g)
+384 	fBodyAccJerk-bandsEnergy()-17,24 FALSE	FALSE 		fBodAcJrk_bandsErgy_17.24 	grvity (g)
+385 	fBodyAccJerk-bandsEnergy()-25,32 FALSE	FALSE 		fBodAcJrk_bandsErgy_25.32 	grvity (g)
+386 	fBodyAccJerk-bandsEnergy()-33,40 FALSE	FALSE 		fBodAcJrk_bandsErgy_33.40 	grvity (g)
+387 	fBodyAccJerk-bandsEnergy()-41,48 FALSE	FALSE 		fBodAcJrk_bandsErgy_41.48 	grvity (g)
+388 	fBodyAccJerk-bandsEnergy()-49,56 FALSE	FALSE 		fBodAcJrk_bandsErgy_49.56 	grvity (g)
+389 	fBodyAccJerk-bandsEnergy()-57,64 FALSE	FALSE 		fBodAcJrk_bandsErgy_57.64 	grvity (g)
+390 	fBodyAccJerk-bandsEnergy()-1,16  FALSE	FALSE 		fBodAcJrk_bandsErgy_1.16	  grvity (g)
+391 	fBodyAccJerk-bandsEnergy()-17,32 FALSE	FALSE 		fBodAcJrk_bandsErgy_17.32 	grvity (g)
+392 	fBodyAccJerk-bandsEnergy()-33,48 FALSE	FALSE 		fBodAcJrk_bandsErgy_33.48 	grvity (g)
+393 	fBodyAccJerk-bandsEnergy()-49,64 FALSE	FALSE 		fBodAcJrk_bandsErgy_49.64 	grvity (g)
+394 	fBodyAccJerk-bandsEnergy()-1,24  FALSE	FALSE 		fBodAcJrk_bandsErgy_1.24	  grvity (g)
+395 	fBodyAccJerk-bandsEnergy()-25,48 FALSE	FALSE 		fBodAcJrk_bandsErgy_25.48	  grvity (g)
+396 	fBodyAccJerk-bandsEnergy()-1,8 	 FALSE	FALSE 		fBodAcJrk_bandsErgy_1.8		  grvity (g)
+397 	fBodyAccJerk-bandsEnergy()-9,16  FALSE	FALSE 		fBodAcJrk_bandsErgy_9.16	  grvity (g)
+398 	fBodyAccJerk-bandsEnergy()-17,24 FALSE	FALSE 		fBodAcJrk_bandsErgy_17.24	  grvity (g)
+399 	fBodyAccJerk-bandsEnergy()-25,32 FALSE	FALSE 		fBodAcJrk_bandsErgy_25.32	  grvity (g)
+400 	fBodyAccJerk-bandsEnergy()-33,40 FALSE	FALSE 		fBodAcJrk_bandsErgy_33.40	  grvity (g)
 
-Orig_COL	Previous_Name			IsMeanVar	IsStdevVar	ShorterVariableName		Units
---------	--------------------------	---------	----------	----------------------		-------
-451 		fBodyGyro-maxInds-Z 	 	FALSE		FALSE 		fBodGyro_maxInds_Z		rad/sec
-452 		fBodyGyro-meanFreq()-X  	TRUE		FALSE 		fBodGyro_meanFreq_X		rad/sec
-453 		fBodyGyro-meanFreq()-Y  	TRUE		FALSE 		fBodGyro_meanFreq_Y		rad/sec
-454 		fBodyGyro-meanFreq()-Z  	TRUE		FALSE 		fBodGyro_meanFreq_Z		rad/sec
-455 		fBodyGyro-skewness()-X 	 	FALSE		FALSE 		fBodGyro_skew_X			rad/sec
-456 		fBodyGyro-kurtosis()-X 	 	FALSE		FALSE 		fBodGyro_kurt_X			rad/sec
-457 		fBodyGyro-skewness()-Y 	 	FALSE		FALSE 		fBodGyro_skew_Y			rad/sec
-458 		fBodyGyro-kurtosis()-Y 	 	FALSE		FALSE 		fBodGyro_kurt_Y			rad/sec
-459 		fBodyGyro-skewness()-Z 	 	FALSE		FALSE 		fBodGyro_skew_Z			rad/sec
-460 		fBodyGyro-kurtosis()-Z 	 	FALSE		FALSE 		fBodGyro_kurt_Z			rad/sec
-461 		fBodyGyro-bandsEnergy()-1,8 	FALSE		FALSE 		fBodGyro_bandsErgy_1.8		rad/sec
-462 		fBodyGyro-bandsEnergy()-9,16 	FALSE		FALSE 		fBodGyro_bandsErgy_9.16		rad/sec
-463 		fBodyGyro-bandsEnergy()-17,24 	FALSE		FALSE 		fBodGyro_bandsErgy_17.24	rad/sec
-464 		fBodyGyro-bandsEnergy()-25,32 	FALSE		FALSE 		fBodGyro_bandsErgy_25.32	rad/sec
-465 		fBodyGyro-bandsEnergy()-33,40 	FALSE		FALSE 		fBodGyro_bandsErgy_33.40	rad/sec
-466 		fBodyGyro-bandsEnergy()-41,48 	FALSE		FALSE 		fBodGyro_bandsErgy_41.48	rad/sec
-467 		fBodyGyro-bandsEnergy()-49,56 	FALSE		FALSE 		fBodGyro_bandsErgy_49.56	rad/sec
-468 		fBodyGyro-bandsEnergy()-57,64 	FALSE		FALSE 		fBodGyro_bandsErgy_57.64	rad/sec
-469 		fBodyGyro-bandsEnergy()-1,16 	FALSE		FALSE 		fBodGyro_bandsErgy_1.16		rad/sec
-470 		fBodyGyro-bandsEnergy()-17,32 	FALSE		FALSE 		fBodGyro_bandsErgy_17.32	rad/sec
-471 		fBodyGyro-bandsEnergy()-33,48 	FALSE		FALSE 		fBodGyro_bandsErgy_33.48	rad/sec
-472 		fBodyGyro-bandsEnergy()-49,64 	FALSE		FALSE 		fBodGyro_bandsErgy_49.64	rad/sec
-473 		fBodyGyro-bandsEnergy()-1,24 	FALSE		FALSE 		fBodGyro_bandsErgy_1.24		rad/sec
-474 		fBodyGyro-bandsEnergy()-25,48 	FALSE		FALSE 		fBodGyro_bandsErgy_25.48	rad/sec
-475 		fBodyGyro-bandsEnergy()-1,8 	FALSE		FALSE 		fBodGyro_bandsErgy_1.8		rad/sec
-476 		fBodyGyro-bandsEnergy()-9,16 	FALSE		FALSE 		fBodGyro_bandsErgy_9.16		rad/sec
-477 		fBodyGyro-bandsEnergy()-17,24 	FALSE		FALSE 		fBodGyro_bandsErgy_17.24	rad/sec
-478 		fBodyGyro-bandsEnergy()-25,32 	FALSE		FALSE 		fBodGyro_bandsErgy_25.32	rad/sec
-479 		fBodyGyro-bandsEnergy()-33,40 	FALSE		FALSE 		fBodGyro_bandsErgy_33.40	rad/sec
-480 		fBodyGyro-bandsEnergy()-41,48 	FALSE		FALSE 		fBodGyro_bandsErgy_41.48	rad/sec
-481 		fBodyGyro-bandsEnergy()-49,56 	FALSE		FALSE 		fBodGyro_bandsErgy_49.56	rad/sec
-482 		fBodyGyro-bandsEnergy()-57,64 	FALSE		FALSE 		fBodGyro_bandsErgy_57.64	rad/sec
-483 		fBodyGyro-bandsEnergy()-1,16 	FALSE		FALSE 		fBodGyro_bandsErgy_1.16		rad/sec
-484 		fBodyGyro-bandsEnergy()-17,32 	FALSE		FALSE 		fBodGyro_bandsErgy_17.32	rad/sec
-485 		fBodyGyro-bandsEnergy()-33,48 	FALSE		FALSE 		fBodGyro_bandsErgy_33.48	rad/sec
-486 		fBodyGyro-bandsEnergy()-49,64 	FALSE		FALSE 		fBodGyro_bandsErgy_49.64	rad/sec
-487 		fBodyGyro-bandsEnergy()-1,24 	FALSE		FALSE 		fBodGyro_bandsErgy_1.24		rad/sec
-488 		fBodyGyro-bandsEnergy()-25,48 	FALSE		FALSE 		fBodGyro_bandsErgy_25.48	rad/sec
-489 		fBodyGyro-bandsEnergy()-1,8 	FALSE		FALSE 		fBodGyro_bandsErgy_1.8		rad/sec
-490 		fBodyGyro-bandsEnergy()-9,16 	FALSE		FALSE 		fBodGyro_bandsErgy_9.16		rad/sec
-491 		fBodyGyro-bandsEnergy()-17,24 	FALSE		FALSE 		fBodGyro_bandsErgy_17.24	rad/sec
-492 		fBodyGyro-bandsEnergy()-25,32 	FALSE		FALSE 		fBodGyro_bandsErgy_25.32	rad/sec
-493 		fBodyGyro-bandsEnergy()-33,40 	FALSE		FALSE 		fBodGyro_bandsErgy_33.40	rad/sec
-494 		fBodyGyro-bandsEnergy()-41,48 	FALSE		FALSE 		fBodGyro_bandsErgy_41.48	rad/sec
-495 		fBodyGyro-bandsEnergy()-49,56 	FALSE		FALSE 		fBodGyro_bandsErgy_49.56	rad/sec
-496 		fBodyGyro-bandsEnergy()-57,64 	FALSE		FALSE 		fBodGyro_bandsErgy_57.64	rad/sec
-497 		fBodyGyro-bandsEnergy()-1,16 	FALSE		FALSE 		fBodGyro_bandsErgy_1.16		rad/sec
-498 		fBodyGyro-bandsEnergy()-17,32 	FALSE		FALSE 		fBodGyro_bandsErgy_17.32	rad/sec
-499 		fBodyGyro-bandsEnergy()-33,48 	FALSE		FALSE 		fBodGyro_bandsErgy_33.48	rad/sec
-500 		fBodyGyro-bandsEnergy()-49,64 	FALSE		FALSE 		fBodGyro_bandsErgy_49.64	rad/sec
+Orig_COL	Previous_Name			        IsMeanVar	IsStdevVar	ShorterVariableName		      Units
+--------	---------------------	---------	----------	----------------------		    -------
+401 	fBodyAccJerk-bandsEnergy()-41,48  FALSE	 FALSE 		fBodAcJrk_bandsErgy_41.48	  grvity (g)
+402 	fBodyAccJerk-bandsEnergy()-49,56  FALSE	 FALSE 		fBodAcJrk_bandsErgy_49.56	  grvity (g)
+403 	fBodyAccJerk-bandsEnergy()-57,64  FALSE	 FALSE 		fBodAcJrk_bandsErgy_57.64	  grvity (g)
+404 	fBodyAccJerk-bandsEnergy()-1,16   FALSE	 FALSE 		fBodAcJrk_bandsErgy_1.16	  grvity (g)
+405 	fBodyAccJerk-bandsEnergy()-17,32  FALSE	 FALSE 		fBodAcJrk_bandsErgy_17.32	  grvity (g)
+406 	fBodyAccJerk-bandsEnergy()-33,48  FALSE	 FALSE 		fBodAcJrk_bandsErgy_33.48	  grvity (g)
+407 	fBodyAccJerk-bandsEnergy()-49,64  FALSE	 FALSE 		fBodAcJrk_bandsErgy_49.64	  grvity (g)
+408 	fBodyAccJerk-bandsEnergy()-1,24   FALSE	 FALSE 		fBodAcJrk_bandsErgy_1.24	  grvity (g)
+409 	fBodyAccJerk-bandsEnergy()-25,48  FALSE	 FALSE 		fBodAcJrk_bandsErgy_25.48	  grvity (g)
+410 	fBodyAccJerk-bandsEnergy()-1,8 	  FALSE	 FALSE 		fBodAcJrk_bandsErgy_1.8	  	grvity (g)
+411 	fBodyAccJerk-bandsEnergy()-9,16   FALSE	 FALSE 		fBodAcJrk_bandsErgy_9.16  	grvity (g)
+412 	fBodyAccJerk-bandsEnergy()-17,24  FALSE	 FALSE 		fBodAcJrk_bandsErgy_17.24 	grvity (g)
+413 	fBodyAccJerk-bandsEnergy()-25,32  FALSE	 FALSE 		fBodAcJrk_bandsErgy_25.32	  grvity (g)
+414 	fBodyAccJerk-bandsEnergy()-33,40  FALSE	 FALSE 		fBodAcJrk_bandsErgy_33.40 	grvity (g)
+415 	fBodyAccJerk-bandsEnergy()-41,48  FALSE	 FALSE 		fBodAcJrk_bandsErgy_41.48 	grvity (g)
+416 	fBodyAccJerk-bandsEnergy()-49,56  FALSE	 FALSE 		fBodAcJrk_bandsErgy_49.56 	grvity (g)
+417 	fBodyAccJerk-bandsEnergy()-57,64  FALSE	 FALSE 		fBodAcJrk_bandsErgy_57.64 	grvity (g)
+418 	fBodyAccJerk-bandsEnergy()-1,16   FALSE	 FALSE 		fBodAcJrk_bandsErgy_1.16	  grvity (g)
+419 	fBodyAccJerk-bandsEnergy()-17,32  FALSE	 FALSE 		fBodAcJrk_bandsErgy_17.32	  grvity (g)
+420 	fBodyAccJerk-bandsEnergy()-33,48  FALSE	 FALSE 		fBodAcJrk_bandsErgy_33.48 	grvity (g)
+421 	fBodyAccJerk-bandsEnergy()-49,64  FALSE	 FALSE 		fBodAcJrk_bandsErgy_49.64	  grvity (g)
+422 	fBodyAccJerk-bandsEnergy()-1,24   FALSE	 FALSE 		fBodAcJrk_bandsErgy_1.24	  grvity (g)
+423 	fBodyAccJerk-bandsEnergy()-25,48  FALSE	 FALSE 		fBodAcJrk_bandsErgy_25.48	  grvity (g)
+424 	fBodyGyro-mean()-X  		          TRUE	  FALSE 	fBodGyro_mean_X			        rad/sec
+425 	fBodyGyro-mean()-Y  		          TRUE		FALSE 	fodGyro_mean_Y			        rad/sec
+426 	fBodyGyro-mean()-Z  		          TRUE		FALSE 	fBodGyro_mean_Z			        rad/sec
+427 	fBodyGyro-std()-X 	 	            FALSE 	TRUE 		fBodGyro_std_X			        rad/sec
+428 	fBodyGyro-std()-Y 	 	            FALSE 	TRUE 		fBodGyro_std_Y			        rad/sec
+429 	fBodyGyro-std()-Z 	 	            FALSE 	TRUE 		fBodGyro_std_Z			        rad/sec
+430 	fBodyGyro-mad()-X 	 	            FALSE		FALSE 	fBodGyro_mad_X			        rad/sec
+431 	fBodyGyro-mad()-Y 	 	            FALSE		FALSE 	fBodGyro_mad_Y			        rad/sec
+432 	fBodyGyro-mad()-Z 	 	            FALSE		FALSE 	fBodGyro_mad_Z			        rad/sec
+433 	fBodyGyro-max()-X 	 	            FALSE		FALSE 	fBodGyro_max_X			        rad/sec
+434 	fBodyGyro-max()-Y 	 	            FALSE		FALSE 	fBodGyro_max_Y			        rad/sec
+435 	fBodyGyro-max()-Z 	 	            FALSE		FALSE 	fBodGyro_max_Z			        rad/sec
+436 	fBodyGyro-min()-X 	 	            FALSE		FALSE 	fBodGyro_min_X			        rad/sec
+437 	fBodyGyro-min()-Y 	 	            FALSE		FALSE 	fBodGyro_min_Y			        rad/sec
+438 	fBodyGyro-min()-Z 	 	            FALSE		FALSE 	fBodGyro_min_Z			        rad/sec
+439 	fBodyGyro-sma() 	 	              FALSE		FALSE 	fBodGyro_sma			          rad/sec
+440 	fBodyGyro-energy()-X 	 	          FALSE		FALSE 	fBodGyro_ergy_X			        rad/sec
+441 	fBodyGyro-energy()-Y 	 	          FALSE		FALSE 	fBodGyro_ergy_Y			        rad/sec
+442 	fBodyGyro-energy()-Z 	 	          FALSE		FALSE 	fBodGyro_ergy_Z			        rad/sec
+443 	fBodyGyro-iqr()-X 	 	            FALSE		FALSE 	fBodGyro_iqr_X			        rad/sec
+444 	fBodyGyro-iqr()-Y 	 	            FALSE		FALSE 	fBodGyro_iqr_Y			        rad/sec
+445 	fBodyGyro-iqr()-Z 	 	            FALSE		FALSE 	fBodGyro_iqr_Z			        rad/sec
+446 	fBodyGyro-entropy()-X 	 	        FALSE		FALSE 	fBodGyro_entrpy_X		        rad/sec
+447 	fBodyGyro-entropy()-Y 	 	        FALSE		FALSE 	fBodGyro_entrpy_Y		        rad/sec
+448 	fBodyGyro-entropy()-Z 	 	        FALSE		FALSE 	fBodGyro_entrpy_Z		        rad/sec
+449 	fBodyGyro-maxInds-X 	 	          FALSE		FALSE 	fBodGyro_maxInds_X		      rad/sec
+450 	fBodyGyro-maxInds-Y 	 	          FALSE		FALSE 	fBodGyro_maxInds_Y		      rad/sec
 
-Orig_COL	Previous_Name			IsMeanVar	IsStdevVar	ShorterVariableName	 	Units
---------	--------------------------	---------	----------	----------------------		-------
-501 		fBodyGyro-bandsEnergy()-1,24 	FALSE		FALSE 		fBodGyro_bandsErgy_1.24		rad/sec
-502 		fBodyGyro-bandsEnergy()-25,48 	FALSE		FALSE 		fBodGyro_bandsErgy_25.48	rad/sec
-503 		fBodyAccMag-mean()  		TRUE		FALSE 		fBodAcMag_mean			grvity (g)
-504 		fBodyAccMag-std() 	 	FALSE 		TRUE 		fBodAcMag_std			grvity (g)
-505 		fBodyAccMag-mad() 	 	FALSE		FALSE 		fBodAcMag_mad			grvity (g)
-506 		fBodyAccMag-max() 	 	FALSE		FALSE 		fBodAcMag_max			grvity (g)
-507 		fBodyAccMag-min() 	 	FALSE		FALSE 		fBodAcMag_min			grvity (g)
-508 		fBodyAccMag-sma() 	 	FALSE		FALSE 		fBodAcMag_sma			grvity (g)
-509 		fBodyAccMag-energy() 	 	FALSE		FALSE 		fBodAcMag_ergy			grvity (g)
-510 		fBodyAccMag-iqr() 	 	FALSE		FALSE 		fBodAcMag_iqr			grvity (g)
-511 		fBodyAccMag-entropy() 	 	FALSE		FALSE 		fBodAcMag_entrpy		grvity (g)
-512 		fBodyAccMag-maxInds 	 	FALSE		FALSE 		fBodAcMag_maxInds		grvity (g)
-513 		fBodyAccMag-meanFreq()  	TRUE		FALSE 		fBodAcMag_meanFreq		grvity (g)
-514 		fBodyAccMag-skewness() 	 	FALSE		FALSE 		fBodAcMag_skew			grvity (g)
-515 		fBodyAccMag-kurtosis() 	 	FALSE		FALSE 		fBodAcMag_kurt			grvity (g)
-516 		fBodyBodyAccJerkMag-mean()  	TRUE		FALSE 		fBodBodAcJrkMag_mean		grvity (g)
-517 		fBodyBodyAccJerkMag-std() 	FALSE 		TRUE 		fBodBodAcJrkMag_std		grvity (g)
-518 		fBodyBodyAccJerkMag-mad() 	FALSE		FALSE 		fBodBodAcJrkMag_mad		grvity (g)
-519 		fBodyBodyAccJerkMag-max() 	FALSE		FALSE 		fBodBodAcJrkMag_max		grvity (g)
-520 		fBodyBodyAccJerkMag-min() 	FALSE		FALSE 		fBodBodAcJrkMag_min		grvity (g)
-521 		fBodyBodyAccJerkMag-sma() 	FALSE		FALSE 		fBodBodAcJrkMag_sma		grvity (g)
-522 		fBodyBodyAccJerkMag-energy() 	FALSE		FALSE 		fBodBodAcJrkMag_ergy		grvity (g)
-523 		fBodyBodyAccJerkMag-iqr() 	FALSE		FALSE 		fBodBodAcJrkMag_iqr		grvity (g)
-524 		fBodyBodyAccJerkMag-entropy() 	FALSE		FALSE 		fBodBodAcJrkMag_entrpy		grvity (g)
-525 		fBodyBodyAccJerkMag-maxInds 	FALSE		FALSE 		fBodBodAcJrkMag_maxInds		grvity (g)
-526 		fBodyBodyAccJerkMag-meanFreq()  TRUE		FALSE 		fBodBodAcJrkMag_meanFreq	grvity (g)
-527 		fBodyBodyAccJerkMag-skewness() 	FALSE		FALSE 		fBodBodAcJrkMag_skew		grvity (g)
-528 		fBodyBodyAccJerkMag-kurtosis() 	FALSE		FALSE 		fBodBodAcJrkMag_kurt		grvity (g)
-529 		fBodyBodyGyroMag-mean()  	TRUE		FALSE 		fBodBodGyroMag_mean		rad/sec
-530 		fBodyBodyGyroMag-std() 	 	FALSE 		TRUE 		fBodBodGyroMag_std		rad/sec
-531 		fBodyBodyGyroMag-mad() 	 	FALSE		FALSE 		fBodBodGyroMag_mad		rad/sec
-532 		fBodyBodyGyroMag-max() 	 	FALSE		FALSE 		fBodBodGyroMag_max		rad/sec
-533 		fBodyBodyGyroMag-min() 	 	FALSE		FALSE 		fBodBodGyroMag_min		rad/sec
-534 		fBodyBodyGyroMag-sma() 	 	FALSE		FALSE 		fBodBodGyroMag_sma		rad/sec
-535 		fBodyBodyGyroMag-energy() 	FALSE		FALSE 		fBodBodGyroMag_ergy		rad/sec
-536 		fBodyBodyGyroMag-iqr() 	 	FALSE		FALSE 		fBodBodGyroMag_iqr		rad/sec
-537 		fBodyBodyGyroMag-entropy() 	FALSE		FALSE 		fBodBodGyroMag_entrpy		rad/sec
-538 		fBodyBodyGyroMag-maxInds 	FALSE		FALSE 		fBodBodGyroMag_maxInds		rad/sec
-539 		fBodyBodyGyroMag-meanFreq()  	TRUE		FALSE 		fBodBodGyroMag_meanFreq		rad/sec
-540 		fBodyBodyGyroMag-skewness() 	FALSE		FALSE 		fBodBodGyroMag_skew		rad/sec
-541 		fBodyBodyGyroMag-kurtosis() 	FALSE		FALSE 		fBodBodGyroMag_kurt		rad/sec
-542 		fBodyBodyGyroJerkMag-mean()  	TRUE		FALSE 		fBodBodGyroJrkMag_mean		rad/sec
-543 		fBodyBodyGyroJerkMag-std() 	FALSE 		TRUE 		fBodBodGyroJrkMag_std		rad/sec
-544 		fBodyBodyGyroJerkMag-mad() 	FALSE		FALSE 		fBodBodGyroJrkMag_mad		rad/sec
-545 		fBodyBodyGyroJerkMag-max() 	FALSE		FALSE 		fBodBodGyroJrkMag_max		rad/sec
-546 		fBodyBodyGyroJerkMag-min() 	FALSE		FALSE 		fBodBodGyroJrkMag_min		rad/sec
-547 		fBodyBodyGyroJerkMag-sma() 	FALSE		FALSE 		fBodBodGyroJrkMag_sma		rad/sec
-548 		fBodyBodyGyroJerkMag-energy() 	FALSE		FALSE 		fBodBodGyroJrkMag_ergy		rad/sec
-549 		fBodyBodyGyroJerkMag-iqr() 	FALSE		FALSE 		fBodBodGyroJrkMag_iqr		rad/sec
-550 		fBodyBodyGyroJerkMag-entropy() 	FALSE		FALSE 		fBodBodGyroJrkMag_entrpy	rad/sec
+Orig_COL	Previous_Name		        	  IsMeanVar	IsStdevVar	ShorterVariableName		    Units
+--------	------------------------	---------	----------	----------------------		-------
+451 	fBodyGyro-maxInds-Z 	 	          FALSE		FALSE 	fBodGyro_maxInds_Z		      rad/sec
+452 	fBodyGyro-meanFreq()-X  	        TRUE		FALSE 	fBodGyro_meanFreq_X		      rad/sec
+453 	fBodyGyro-meanFreq()-Y  	        TRUE		FALSE 	fBodGyro_meanFreq_Y		      rad/sec
+454 	fBodyGyro-meanFreq()-Z  	        TRUE		FALSE 	fBodGyro_meanFreq_Z		      rad/sec
+455 	fBodyGyro-skewness()-X 	 	        FALSE		FALSE 	fBodGyro_skew_X			        rad/sec
+456 	fBodyGyro-kurtosis()-X 	 	        FALSE		FALSE 	fBodGyro_kurt_X			        rad/sec
+457 	fBodyGyro-skewness()-Y 	 	        FALSE		FALSE 	fBodGyro_skew_Y			        rad/sec
+458 	fBodyGyro-kurtosis()-Y 	 	        FALSE		FALSE 	fBodGyro_kurt_Y			        rad/sec
+459 	fBodyGyro-skewness()-Z 	      	  FALSE		FALSE 	fBodGyro_skew_Z		        	rad/sec
+460 	fBodyGyro-kurtosis()-Z 	 	        FALSE		FALSE 	fBodGyro_kurt_Z			        rad/sec
+461 	fBodyGyro-bandsEnergy()-1,8 	    FALSE		FALSE 	fBodGyro_bandsErgy_1.8		  rad/sec
+462 	fBodyGyro-bandsEnergy()-9,16 	    FALSE		FALSE 	fBodGyro_bandsErgy_9.16		  rad/sec
+463 	fBodyGyro-bandsEnergy()-17,24 	  FALSE		FALSE 	fBodGyro_bandsErgy_17.24	  rad/sec
+464 	fBodyGyro-bandsEnergy()-25,32 	  FALSE		FALSE 	fBodGyro_bandsErgy_25.32	  rad/sec
+465 	fBodyGyro-bandsEnergy()-33,40 	  FALSE		FALSE 	fBodGyro_bandsErgy_33.40	  rad/sec
+466 	fBodyGyro-bandsEnergy()-41,48 	  FALSE		FALSE 	fBodGyro_bandsErgy_41.48	  rad/sec
+467 	fBodyGyro-bandsEnergy()-49,56 	  FALSE		FALSE 	fBodGyro_bandsErgy_49.56	  rad/sec
+468 	fBodyGyro-bandsEnergy()-57,64 	  FALSE		FALSE 	fBodGyro_bandsErgy_57.64	  rad/sec
+469 	fBodyGyro-bandsEnergy()-1,16 	    FALSE		FALSE 	fBodGyro_bandsErgy_1.16		  rad/sec
+470 	fBodyGyro-bandsEnergy()-17,32 	  FALSE		FALSE 	fBodGyro_bandsErgy_17.32	  rad/sec
+471 	fBodyGyro-bandsEnergy()-33,48 	  FALSE		FALSE 	fBodGyro_bandsErgy_33.48	  rad/sec
+472 	fBodyGyro-bandsEnergy()-49,64 	  FALSE		FALSE 	fBodGyro_bandsErgy_49.64	  rad/sec
+473 	fBodyGyro-bandsEnergy()-1,24 	    FALSE		FALSE 	fBodGyro_bandsErgy_1.24		  rad/sec
+474 	fBodyGyro-bandsEnergy()-25,48 	  FALSE		FALSE 	fBodGyro_bandsErgy_25.48	  rad/sec
+475 	fBodyGyro-bandsEnergy()-1,8 	    FALSE		FALSE 	fBodGyro_bandsErgy_1.8		  rad/sec
+476 	fBodyGyro-bandsEnergy()-9,16 	    FALSE		FALSE 	fBodGyro_bandsErgy_9.16	  	rad/sec
+477 	fBodyGyro-bandsEnergy()-17,24 	  FALSE		FALSE 	fBodGyro_bandsErgy_17.24	  rad/sec
+478 	fBodyGyro-bandsEnergy()-25,32 	  FALSE		FALSE 	fBodGyro_bandsErgy_25.32  	rad/sec
+479 	fBodyGyro-bandsEnergy()-33,40 	  FALSE		FALSE 	fBodGyro_bandsErgy_33.40	  rad/sec
+480 	fBodyGyro-bandsEnergy()-41,48 	  FALSE		FALSE 	fBodGyro_bandsErgy_41.48	  rad/sec
+481 	fBodyGyro-bandsEnergy()-49,56 	  FALSE		FALSE 	fBodGyro_bandsErgy_49.56	  rad/sec
+482 	fBodyGyro-bandsEnergy()-57,64 	  FALSE		FALSE 	fBodGyro_bandsErgy_57.64	  rad/sec
+483 	fBodyGyro-bandsEnergy()-1,16 	    FALSE		FALSE 	fBodGyro_bandsErgy_1.16	  	rad/sec
+484 	fBodyGyro-bandsEnergy()-17,32 	  FALSE		FALSE 	fBodGyro_bandsErgy_17.32	  rad/sec
+485 	fBodyGyro-bandsEnergy()-33,48 	  FALSE		FALSE 	fBodGyro_bandsErgy_33.48  	rad/sec
+486 	fBodyGyro-bandsEnergy()-49,64 	  FALSE		FALSE 	fBodGyro_bandsErgy_49.64  	rad/sec
+487 	fBodyGyro-bandsEnergy()-1,24 	    FALSE		FALSE 	fBodGyro_bandsErgy_1.24		  rad/sec
+488 	fBodyGyro-bandsEnergy()-25,48   	FALSE		FALSE 	fBodGyro_bandsErgy_25.48	  rad/sec
+489 	fBodyGyro-bandsEnergy()-1,8 	    FALSE		FALSE 	fBodGyro_bandsErgy_1.8		  rad/sec
+490 	fBodyGyro-bandsEnergy()-9,16 	    FALSE		FALSE 	fBodGyro_bandsErgy_9.16	  	rad/sec
+491 	fBodyGyro-bandsEnergy()-17,24 	  FALSE		FALSE 	fBodGyro_bandsErgy_17.24  	rad/sec
+492 	fBodyGyro-bandsEnergy()-25,32 	  FALSE		FALSE 	fBodGyro_bandsErgy_25.32  	rad/sec
+493 	fBodyGyro-bandsEnergy()-33,40 	  FALSE		FALSE 	fBodGyro_bandsErgy_33.40	  rad/sec
+494 	fBodyGyro-bandsEnergy()-41,48 	  FALSE		FALSE 	fBodGyro_bandsErgy_41.48	  rad/sec
+495 	fBodyGyro-bandsEnergy()-49,56 	  FALSE		FALSE 	fBodGyro_bandsErgy_49.56  	rad/sec
+496 	fBodyGyro-bandsEnergy()-57,64 	  FALSE		FALSE 	fBodGyro_bandsErgy_57.64  	rad/sec
+497 	fBodyGyro-bandsEnergy()-1,16 	    FALSE		FALSE 	fBodGyro_bandsErgy_1.16	  	rad/sec
+498 	fBodyGyro-bandsEnergy()-17,32 	  FALSE		FALSE 	fBodGyro_bandsErgy_17.32	  rad/sec
+499 	fBodyGyro-bandsEnergy()-33,48 	  FALSE		FALSE 	fBodGyro_bandsErgy_33.48	  rad/sec
+500 	fBodyGyro-bandsEnergy()-49,64 	  FALSE		FALSE 	fBodGyro_bandsErgy_49.64	  rad/sec
 
-Orig_COL	Previous_Name			IsMeanVar	IsStdevVar	ShorterVariableName		Units
---------	--------------------------	---------	----------	----------------------		-------
-551 		fBodyBodyGyroJerkMag-maxInds 	FALSE		FALSE 		fBodBodGyroJrkMag_maxInds	rad/sec
-552 		fBodyBodyGyroJerkMag-meanFreq() TRUE		FALSE 		fBodBodGyroJrkMag_meanFreq	rad/sec
-553 		fBodyBodyGyroJerkMag-skewness() FALSE		FALSE 		fBodBodGyroJrkMag_skew		rad/sec
-554 		fBodyBodyGyroJerkMag-kurtosis() FALSE		FALSE 		fBodBodGyroJrkMag_kurt		rad/sec
-555 		angle(tBodyAccMean,gravityMean) TRUE		FALSE 		angOf_tBodAcMean.grvMean	rad
-556 		angle(tBodyAccJerkMean,gravityMean)TRUE		FALSE 		angOf_tBodAcJrkMean.grvMean	rad
-557 		angle(tBodyGyroMean,gravityMean) TRUE		FALSE 		angOf_tBodGyroMean.grvMean	rad
-558 		angle(tBodyGyroJerkMean,gravityMean)TRUE	FALSE 		angOf_tBodGyroJrkMean.grvMean	rad
-559 		angle(X,gravityMean)  		TRUE		FALSE 		angOf_X.grvMean			rad
-560 		angle(Y,gravityMean)  		TRUE		FALSE 		angOf_Y.grvMean			rad
-561 		angle(Z,gravityMean)  		TRUE		FALSE 		angOf_Z.grvMean			rad
+Orig_COL	Previous_Name			        IsMeanVar	IsStdevVar	ShorterVariableName	 	      Units
+--------	-------------------------	---------	----------	----------------------		-------
+501 	fBodyGyro-bandsEnergy()-1,24 	    FALSE		FALSE 		fBodGyro_bandsErgy_1.24		rad/sec
+502 	fBodyGyro-bandsEnergy()-25,48 	  FALSE		FALSE 		fBodGyro_bandsErgy_25.48	rad/sec
+503 	fBodyAccMag-mean()  		          TRUE		FALSE 		fBodAcMag_mean			      grvity (g)
+504 	fBodyAccMag-std() 	 	            FALSE 	TRUE 		  fBodAcMag_std			        grvity (g)
+505 	fBodyAccMag-mad() 	 	            FALSE		FALSE 		fBodAcMag_mad			        grvity (g)
+506 	fBodyAccMag-max() 	 	            FALSE		FALSE 		fBodAcMag_max			        grvity (g)
+507 	fBodyAccMag-min() 	 	            FALSE		FALSE 		fBodAcMag_min			        grvity (g)
+508 	fBodyAccMag-sma() 	 	            FALSE		FALSE 		fBodAcMag_sma		        	grvity (g)
+509 	fBodyAccMag-energy() 	        	  FALSE		FALSE 		fBodAcMag_ergy			      grvity (g)
+510 	fBodyAccMag-iqr() 	 	            FALSE		FALSE 		fBodAcMag_iqr			        grvity (g)
+511 	fBodyAccMag-entropy() 	 	        FALSE		FALSE 		fBodAcMag_entrpy		      grvity (g)
+512 	fBodyAccMag-maxInds 	 	          FALSE		FALSE 		fBodAcMag_maxInds		      grvity (g)
+513 	fBodyAccMag-meanFreq()  	        TRUE		FALSE 		fBodAcMag_meanFreq		    grvity (g)
+514 	fBodyAccMag-skewness() 	 	        FALSE		FALSE 		fBodAcMag_skew			      grvity (g)
+515 	fBodyAccMag-kurtosis() 	 	        FALSE		FALSE 		fBodAcMag_kurt			      grvity (g)
+516 	fBodyBodyAccJerkMag-mean()  	    TRUE		FALSE 		fBodBodAcJrkMag_mean	  	grvity (g)
+517 	fBodyBodyAccJerkMag-std() 	      FALSE 	TRUE 		  fBodBodAcJrkMag_std		    grvity (g)
+518 	fBodyBodyAccJerkMag-mad() 	      FALSE		FALSE 		fBodBodAcJrkMag_mad		    grvity (g)
+519 	fBodyBodyAccJerkMag-max() 	      FALSE		FALSE 		fBodBodAcJrkMag_max		    grvity (g)
+520 	fBodyBodyAccJerkMag-min() 	      FALSE		FALSE 		fBodBodAcJrkMag_min		    grvity (g)
+521 	fBodyBodyAccJerkMag-sma() 	      FALSE		FALSE 		fBodBodAcJrkMag_sma	    	grvity (g)
+522 	fBodyBodyAccJerkMag-energy() 	    FALSE		FALSE 		fBodBodAcJrkMag_ergy	  	grvity (g)
+523 	fBodyBodyAccJerkMag-iqr() 	      FALSE		FALSE 		fBodBodAcJrkMag_iqr		    grvity (g)
+524 	fBodyBodyAccJerkMag-entropy() 	  FALSE		FALSE 		fBodBodAcJrkMag_entrpy		grvity (g)
+525 	fBodyBodyAccJerkMag-maxInds 	    FALSE		FALSE 		fBodBodAcJrkMag_maxInds		grvity (g)
+526 	fBodyBodyAccJerkMag-meanFreq()    TRUE		FALSE 		fBodBodAcJrkMag_meanFreq	grvity (g)
+527 	fBodyBodyAccJerkMag-skewness() 	  FALSE		FALSE 		fBodBodAcJrkMag_skew		  grvity (g)
+528 	fBodyBodyAccJerkMag-kurtosis() 	  FALSE		FALSE 		fBodBodAcJrkMag_kurt		  grvity (g)
+529 	fBodyBodyGyroMag-mean()  	        TRUE		FALSE 		fBodBodGyroMag_mean		    rad/sec
+530 	fBodyBodyGyroMag-std() 	 	        FALSE 	TRUE 		  fBodBodGyroMag_std		    rad/sec
+531 	fBodyBodyGyroMag-mad() 	 	        FALSE		FALSE 		fBodBodGyroMag_mad		    rad/sec
+532 	fBodyBodyGyroMag-max() 	 	        FALSE		FALSE 		fBodBodGyroMag_max		    rad/sec
+533 	fBodyBodyGyroMag-min() 	 	        FALSE		FALSE 		fBodBodGyroMag_min		    rad/sec
+534 	fBodyBodyGyroMag-sma() 	 	        FALSE		FALSE 		fBodBodGyroMag_sma		    rad/sec
+535 	fBodyBodyGyroMag-energy() 	      FALSE		FALSE 		fBodBodGyroMag_ergy		    rad/sec
+536 	fBodyBodyGyroMag-iqr() 	 	        FALSE		FALSE 		fBodBodGyroMag_iqr		    rad/sec
+537 	fBodyBodyGyroMag-entropy() 	      FALSE		FALSE 		fBodBodGyroMag_entrpy		  rad/sec
+538 	fBodyBodyGyroMag-maxInds 	        FALSE		FALSE 		fBodBodGyroMag_maxInds		rad/sec
+539 	fBodyBodyGyroMag-meanFreq()  	    TRUE		FALSE 		fBodBodGyroMag_meanFreq		rad/sec
+540 	fBodyBodyGyroMag-skewness() 	    FALSE		FALSE 		fBodBodGyroMag_skew		    rad/sec
+541 	fBodyBodyGyroMag-kurtosis() 	    FALSE		FALSE 		fBodBodGyroMag_kurt		    rad/sec
+542 	fBodyBodyGyroJerkMag-mean()  	    TRUE		FALSE 		fBodBodGyroJrkMag_mean		rad/sec
+543 	fBodyBodyGyroJerkMag-std() 	      FALSE 	TRUE 		  fBodBodGyroJrkMag_std		  rad/sec
+544 	fBodyBodyGyroJerkMag-mad() 	      FALSE		FALSE 		fBodBodGyroJrkMag_mad		  rad/sec
+545 	fBodyBodyGyroJerkMag-max() 	      FALSE		FALSE 		fBodBodGyroJrkMag_max		  rad/sec
+546 	fBodyBodyGyroJerkMag-min() 	      FALSE		FALSE 		fBodBodGyroJrkMag_min		  rad/sec
+547 	fBodyBodyGyroJerkMag-sma() 	      FALSE		FALSE 		fBodBodGyroJrkMag_sma		  rad/sec
+548 	fBodyBodyGyroJerkMag-energy() 	  FALSE		FALSE 		fBodBodGyroJrkMag_ergy		rad/sec
+549 	fBodyBodyGyroJerkMag-iqr() 	      FALSE		FALSE 		fBodBodGyroJrkMag_iqr	  	rad/sec
+550 	fBodyBodyGyroJerkMag-entropy() 	  FALSE		FALSE 		fBodBodGyroJrkMag_entrpy	rad/sec
+
+Orig_COL	Previous_Name			        IsMeanVar	IsStdevVar	ShorterVariableName		      Units
+--------	------------------------	---------	----------	----------------------		-------
+551 	fBodyBodyGyroJerkMag-maxInds 	    FALSE		FALSE 		fBodBodGyroJrkMag_maxInds	  rad/sec
+552 	fBodyBodyGyroJerkMag-meanFreq()   TRUE		FALSE 		fBodBodGyroJrkMag_meanFreq	rad/sec
+553 	fBodyBodyGyroJerkMag-skewness()   FALSE		FALSE 		fBodBodGyroJrkMag_skew		  rad/sec
+554 	fBodyBodyGyroJerkMag-kurtosis()   FALSE		FALSE 		fBodBodGyroJrkMag_kurt		  rad/sec
+555 	angle(tBodyAccMean,gravityMean)   TRUE		FALSE 		angOf_tBodAcMean.grvMean	    rad
+556 	angle(tBodyAccJerkMean,gravityMean) TRUE	FALSE 		angOf_tBodAcJrkMean.grvMean	  rad
+557 	angle(tBodyGyroMean,gravityMean)  TRUE		FALSE 		angOf_tBodGyroMean.grvMean	  rad
+558 	angle(tBodyGyroJerkMean,gravityMean)  TRUE	FALSE 	angOf_tBodGyroJrkMean.grvMean	rad
+559 	angle(X,gravityMean)  		        TRUE		FALSE 		angOf_X.grvMean			          rad
+560 	angle(Y,gravityMean)  		        TRUE		FALSE 		angOf_Y.grvMean			          rad
+561 	angle(Z,gravityMean)  		        TRUE		FALSE 		angOf_Z.grvMean			          rad
