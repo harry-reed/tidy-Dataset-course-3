@@ -1,6 +1,6 @@
 "x"
-"1" "Activity" 						- GROUPING
-"2" "Subject_ID" 					- GROUPING
+"1" "Activity" 						    - GROUPING
+"2" "Subject_ID" 					    - GROUPING
 "3" "AV_tBodAc_mean_X"				- Gravity Units (g)
 "4" "AV_tBodAc_mean_Y"				- Gravity Units (g)
 "5" "AV_tBodAc_mean_Z"				- Gravity Units (g)
