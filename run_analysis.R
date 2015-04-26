@@ -16,16 +16,6 @@
 #      participant during both the training and testing experimental phases.   #
 #                                                                              #
 #   Required Input                                                             #
-#                                                                              #
-#      NOTICE:  All files have the format where row values are separated by    #
-#           a space [SP] and the last value on each row preceeds an            #
-#           end-of-line [EL] character.                                        #
-#                                                                              #
-#           To view the file in its raw form, use 'WordPad' or an equivalent   #
-#           editor since less smart editors may show crazy results.  Also,     #
-#           there may be more than one space character separating the column   #
-#           values.  Text strings contain no spaces (replaced with underline   #
-#           characters).                                                       #
 #                                                                              #                                                                              #                                                           #
 #      FILE: 'UCI_HAR_Dataset/activity_labels.txt' : short, descriptive        #
 #            activity names & uniquely assigned ID reference numbers. Each     #
@@ -34,105 +24,10 @@
 #            from a set of activities such as 'WALKING', 'SITTING', etc.,      #
 #            which was captured unising that activity's unique ref num (1-6).  #
 #                                                                              #
-#            Format: IntegerID[SP]ActivityNameString[EL]...                    #
-#                                                                              #
-#            In the UCI_HAR_Dataset, six activities were given with the names  #
-#            shown in the BEFORE ACTIVITIES LIST.                              #
-#                                                                              #
-#            The first activity 'WALKING' was renamed to 'WALKING_PLAIN'       #
-#            (shown in the FINAL ACTIVITIES LIST) so that the column with      #
-#            data of the subject walking without climbing or descending stairs #
-#            could be selected more easily.  Here are the activities:          #
-#                                                                              #
-#               BEFORE ACTIVITIES LIST          AFTER ACTIVITIES LIST          #
-#             --------------------------      -------------------------        #
-#             ID #          NAME              ID #          NAME               #
-#             ....    ..................      ....    .................        #
-#              1      WALKING                  1      WALKING_PLAIN            #
-#              2      WALKING_UPSTAIRS         2      WALKING_UPSTAIRS         #
-#              3      WALKING_DOWNSTAIRS       3      WALKING_DOWNSTAIRS       #
-#              4      SITTING                  4      SITTING                  #
-#              5      STANDING                 5      STANDING                 #
-#              6      LAYING                   6      LAYING                   #
-#                                                                              #
 #      FILE: 'UCI_HAR_Dataset/features.txt' : variable names and presentation  #
 #            (column) order.  This file maps short descriptive names of each   #
 #            variable whose values were measured during each experimental      #
 #            iteration, to its unique presentation (column) order.             #
-#                                                                              #
-#            NOTE: There appears to be typos in variable names ...             #
-#                  555 - 'angle(tBodyAccMean,gravity)' should be               #
-#                              'angle(tBodyAccMean,gravityMean)'.              #
-#                  556 - 'angle(tBodyAccJerkMean),gravityMean)' should be      #
-#                              'angle(tBodyAccJerkMean,gravityMean)'           #
-#                                                                              #
-#            NOTE: Variable names should not contain the minus '-' sign.  So   #
-#                  all minus signs will be replaced by underscore '_' in the   #
-#                  shorter name versions below.                                #
-#                                                                              #
-#                  Variable names should also not contain the character        #
-#                  sequence '()' so we will eliminate this with little         #
-#                  confusion impact.                                           #
-#                                                                              #
-#                  Variable names should not contain ',' so we will replace    #
-#                  with '.' to make them valid for R.                          #
-#                                                                              #
-#                  Variable names should not contain the sequence '(' and we   #
-#                  will replace this sequence with 'Of_' to keep the sense of  #
-#                  "as a function of" in the variable name.                    #
-#                                                                              #
-#                  Variable names should not contain the sequence ')' so we    #
-#                  will eliminate this with little confusion impact.           #
-#                                                                              #
-#            NOTE: Two variable names exceed the 32 character limit of R for   #
-#                  column names.  This will no longer be a concern when we     #
-#                  shorten all of the names so that they will not exceed 25    #
-#                  characters.:                                                #
-#                                                                              #
-#                  shorten  'angle' to 'ang'                                   #
-#                           'Body' to 'Bod'                                    #
-#                           'Jerk' to 'Jrk'                                    #
-#                           'Gravity' to 'Grv'                                 #
-#                           'gravity' to 'grv'                                 #
-#                           'kurtosis' to 'kurt'                               #
-#                           'skewness' to 'skew'                               #
-#                           'Energy' to 'Ergy'                                 #
-#                           'energy' to 'ergy'                                 #
-#                           'entropy' to 'entrpy'                              #
-#                           'Acc' to 'Ac'                                      #
-#                           'correlation' to 'corr'                            #
-#                                                                              #
-#                  An additional column will be added to the variable names    #
-#                  and presentation order table 'varNamRefTab' showing how     #
-#                  each original name was shortened.                           #
-#                                                                              #
-#            Since we will only consider mean and standard deviation values, a #
-#            column 'IsMeanVar' and 'IsStdevVar' will be added to the          #
-#            variable name and presentation order table 'varNamRefTab'         #
-#            such that ...                                                     #
-#                                                                              #
-#                  IsMeanVar = TRUE if name has '-mean' | 'Mean', else FALSE.  #
-#                  IsStdevVar = TRUE if name has '-std', else FALSE.           #
-#                                                                              #
-#            Adding these columns provides a fast validation and eliminates    #
-#            the need to perform this filtering twice.                         #
-#                                                                              #
-#            Several of the variable names are replicated although this did    #
-#            not cause immediate problems since the customer only wanted       #
-#            variables involving means and standard deviations.  The           #
-#            replicated names did not fall into this category (future warning).#
-#                                                                              #
-#            Format: IntegerID[SP]VariableNameString[EL]...                    #
-#                                                                              #
-#            In the UCI_HAR_Dataset, 561 variables were given with the names   #
-#            shown in the BEFORE VARIABLES LIST. These names were shortened    #
-#            and their syntax brought to R language standard as shown in the   #
-#            AFTER VARIABLES LIST.  Variables with mean or standard deviation  #
-#            values were kept for the final averaging (desired by the          #
-#            customer).  Variables kept are noted 'YES' in the KEPT field.     #
-#                                                                              #
-#           BEFORE VARIABLES LIST                  AFTER VARIABLES LIST        #
-#  ---------------------------------------   --------------------------------  #
 #                                                                              #
 #      FILE: 'UCI_HAR_Dataset/train/y_train.txt' : List of the single activity #
 #            (by ID number) performed during each experimental iteration while #
