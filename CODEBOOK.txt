@@ -1,0 +1,226 @@
+CODEBOOK for SCRIPT :  r u n _ a n a l y s i s . R
+
+   VERSION 1.0
+
+   NOTE:  For documentation of the 'UCI HAR Dataset' on which this script
+          acts, please refer to './UCI_HAR_Dataset/README.txt'.
+
+#  Author                                                                     #
+
+     Harry J. Reed  -  reed_harry@bah.com  -  April 26, 2015
+
+#  Purpose                                                                     #
+
+     This script acts on files contained in the 'UCI HAR Dataset' producing a
+     tidy dataset containing averages of the means and standard deviations of
+     each Dataset variable for every activity performed by every student
+     participant during both the training and testing experimental phases.
+
+     This project was undertaken to satisfy requirements posed by the class
+     assignment for the 'Getting and Cleaning Data', JHU / Coursera course.
+
+#  Variables                                                                   #
+
+     This study referenced variables and measurements of the UCI_HAR_Dataset.
+     Details about how the data was collected, reduced, and the experimental
+     design are contained in './UCI_HAR_Dataset/README.txt'.
+
+   Variable Names Used and Units:
+
+     Appendix A contains a detailed listing of former variable names and dataset
+     column positions with new shorter names assigned for this study.  These
+     names eliminate many R programming syntax errors as well as two typos.
+     Variable units as well as whether this study included them as containing
+     mean or standard deviation values are also contained in Appendix A.
+
+     At the end of this file are all of the variables contained in the averaged
+     tidy dataset with their column order and units. 
+
+#  Script Flow                                                              #
+
+     This script was designed to be executed without arguments, within the
+     same directory as the './UCI_HAR_Dataset directory'.
+
+     UCI_HAR_Dataset files required are ...
+
+            './UCI_HAR_Dataset/activity_labels.txt' : short, descriptive
+            activity names & uniquely assigned ID reference numbers.
+
+            './UCI_HAR_Dataset/features.txt' : variable names and presentation
+            (column) order.
+
+            './UCI_HAR_Dataset/train/y_train.txt' : List of the single activity
+            (by ID number) performed during each experimental iteration when
+            the experiment was in its TRAINING PHASE.
+
+            './UCI_HAR_Dataset/train/subject_train.txt' : List of subject IDs
+            (student) performing experimental iterations during the
+            experiment's TRAINING PHASE.
+
+            './UCI_HAR_Dataset/train/X_train.txt' :  Text file table of 561
+            exponential numbers per row separated by spaces with each row
+            terminated by an end-of-line character.  Each row is one
+            iteration of the experiment during its TRAINING PHASE.
+
+            './UCI_HAR_Dataset/test/y_test.txt' : List of the single activity
+            (by ID number) performed during each experimental iteration while
+            the experiment was in its TESTING PHASE.
+
+            './UCI_HAR_Dataset/test/subject_test.txt' : List of subject IDs
+            (student) performing experimental iterations during the
+            experiment's TESTING PHASE.
+
+            './UCI_HAR_Dataset/test/X_test.txt' :  Text file table of 5
+            exponential numbers per row separated by spaces with each row
+            terminated by an end-of-line character.  Each row is one
+            iteration of the experiment during its TESTING PHASE.
+
+
+      Basic Logic:
+
+            I. Load activity names and unique ID numbers into table.
+
+           II. Load variable names and their column positions numbers into table.
+
+          III. Create shorter variable names with proper, R standard syntax.
+
+               A. Note if the variable will be kept for the final averaging / delivery.
+
+                  1. Keep if variable is a mean or standard deviation value.
+
+                  2. Add two columns indicating if var is a mean or is a stddev val.
+
+               B. Once the shorter names are created, add column next to original for
+                  easier cross-reference.
+
+            IV. Remove the shortNames that are not mean or standard deviation measures.
+                Use this one vector of strings to add column names for train and test phases.
+
+             V. TRAINING PHASE
+
+                A. Gather and process information regarding the training phase of the
+                   experiment.  Creating a table to be stacked to form the tidy delivery.
+
+                   1. Load experimental subject, activity, and variable values data where
+                      each row contains one iteration (run) of the training phase.
+
+                   2. Keep only variables that correspond to mean or standard deviation values
+                      to reduce complexity and meet customer requirements.
+
+                   3. Add variable names and columns to capture this data-subset came from the
+                      training phase as well as activity and subject info.
+
+                B. Arrange the columns with Phase, Activity, and Subject_ID first to complete
+                   assembly of the training phase data-subset.
+
+            VI. TESTING PHASE: Same basic operations as the training phase
+
+           VII. Stack the data-subsets from the training and testing phases to form a means
+                dataset ready for averaging, systematic renaming, and delivery.
+
+          VIII. Create the averages of the stacked table to create the means result.
+
+                A. Compute the averages for all variables by activity then subject ID.
+
+                B. Update the variable names to indicate averages.
+
+            IX. Write results into the user's directory
+
+                A. Averaged results with and without row names.
+
+                B. Include the variable name reference table tying shortened variable names
+                   to the original UCI_HAR_Dataset names.
+
+                C. Also note the activities names and averaged variables' names.
+
+=========================================================================
+Variables, Column Order, and Units
+
+"1" "Activity" 						- GROUPING
+"2" "Subject_ID" 					- GROUPING
+"3" "AV_tBodAc_mean_X"				- Gravity Units (g)
+"4" "AV_tBodAc_mean_Y"				- Gravity Units (g)
+"5" "AV_tBodAc_mean_Z"				- Gravity Units (g)
+"6" "AV_tBodAc_std_X"					- Gravity Units (g)
+"7" "AV_tBodAc_std_Y"					- Gravity Units (g)
+"8" "AV_tBodAc_std_Z"					- Gravity Units (g)
+"9" "AV_tGrvAc_mean_X"				- Gravity Units (g)
+"10" "AV_tGrvAc_mean_Y"				- Gravity Units (g)
+"11" "AV_tGrvAc_mean_Z"				- Gravity Units (g)
+"12" "AV_tGrvAc_std_X"				- Gravity Units (g)
+"13" "AV_tGrvAc_std_Y"				- Gravity Units (g)
+"14" "AV_tGrvAc_std_Z"				- Gravity Units (g)
+"15" "AV_tBodAcJrk_mean_X"				- Gravity Units (g)
+"16" "AV_tBodAcJrk_mean_Y"				- Gravity Units (g)
+"17" "AV_tBodAcJrk_mean_Z"				- Gravity Units (g)
+"18" "AV_tBodAcJrk_std_X"				- Gravity Units (g)
+"19" "AV_tBodAcJrk_std_Y"				- Gravity Units (g)
+"20" "AV_tBodAcJrk_std_Z"				- Gravity Units (g)
+"21" "AV_tBodGyro_mean_X"				- radians / second
+"22" "AV_tBodGyro_mean_Y"				- radians / second
+"23" "AV_tBodGyro_mean_Z"				- radians / second
+"24" "AV_tBodGyro_std_X"				- radians / second
+"25" "AV_tBodGyro_std_Y"				- radians / second
+"26" "AV_tBodGyro_std_Z"				- radians / second
+"27" "AV_tBodGyroJrk_mean_X"			- radians / second
+"28" "AV_tBodGyroJrk_mean_Y"			- radians / second
+"29" "AV_tBodGyroJrk_mean_Z"			- radians / second
+"30" "AV_tBodGyroJrk_std_X"			- radians / second
+"31" "AV_tBodGyroJrk_std_Y"			- radians / second
+"32" "AV_tBodGyroJrk_std_Z"			- radians / second
+"33" "AV_tBodAcMag_mean"				- Gravity Units (g)
+"34" "AV_tBodAcMag_std"				- Gravity Units (g)
+"35" "AV_tGrvAcMag_mean"				- Gravity Units (g)
+"36" "AV_tGrvAcMag_std"				- Gravity Units (g)
+"37" "AV_tBodAcJrkMag_mean"			- Gravity Units (g)
+"38" "AV_tBodAcJrkMag_std"				- Gravity Units (g)
+"39" "AV_tBodGyroMag_mean"				- radians / second
+"40" "AV_tBodGyroMag_std"				- radians / second
+"41" "AV_tBodGyroJrkMag_mean"			- radians / second
+"42" "AV_tBodGyroJrkMag_std"			- radians / second
+"43" "AV_fBodAc_mean_X"				- Gravity Units (g)
+"44" "AV_fBodAc_mean_Y"				- Gravity Units (g)
+"45" "AV_fBodAc_mean_Z"				- Gravity Units (g)
+"46" "AV_fBodAc_std_X"				- Gravity Units (g)
+"47" "AV_fBodAc_std_Y"				- Gravity Units (g)
+"48" "AV_fBodAc_std_Z"				- Gravity Units (g)
+"49" "AV_fBodAc_meanFreq_X"			- Gravity Units (g)
+"50" "AV_fBodAc_meanFreq_Y"			- Gravity Units (g)
+"51" "AV_fBodAc_meanFreq_Z"			- Gravity Units (g)
+"52" "AV_fBodAcJrk_mean_X"				- Gravity Units (g)
+"53" "AV_fBodAcJrk_mean_Y"				- Gravity Units (g)
+"54" "AV_fBodAcJrk_mean_Z"				- Gravity Units (g)
+"55" "AV_fBodAcJrk_std_X"				- Gravity Units (g)
+"56" "AV_fBodAcJrk_std_Y"				- Gravity Units (g)
+"57" "AV_fBodAcJrk_std_Z"				- Gravity Units (g)
+"58" "AV_fBodAcJrk_meanFreq_X"			- Gravity Units (g)
+"59" "AV_fBodAcJrk_meanFreq_Y"			- Gravity Units (g)
+"60" "AV_fBodAcJrk_meanFreq_Z"			- Gravity Units (g)
+"61" "AV_fBodGyro_mean_X"				- radians / second
+"62" "AV_fBodGyro_mean_Y"				- radians / second
+"63" "AV_fBodGyro_mean_Z"				- radians / second
+"64" "AV_fBodGyro_std_X"				- radians / second
+"65" "AV_fBodGyro_std_Y"				- radians / second
+"66" "AV_fBodGyro_std_Z"				- radians / second
+"67" "AV_fBodGyro_meanFreq_X"			- radians / second
+"68" "AV_fBodGyro_meanFreq_Y"			- radians / second
+"69" "AV_fBodGyro_meanFreq_Z"			- radians / second
+"70" "AV_fBodAcMag_mean"				- Gravity Units (g)
+"71" "AV_fBodAcMag_std"				- Gravity Units (g)
+"72" "AV_fBodAcMag_meanFreq"			- Gravity Units (g)
+"73" "AV_fBodBodAcJrkMag_mean"			- Gravity Units (g)
+"74" "AV_fBodBodAcJrkMag_std"			- Gravity Units (g)
+"75" "AV_fBodBodAcJrkMag_meanFreq"		- Gravity Units (g)
+"76" "AV_fBodBodGyroMag_mean"			- radians / second
+"77" "AV_fBodBodGyroMag_std"			- radians / second
+"78" "AV_fBodBodGyroMag_meanFreq"		- radians / second
+"79" "AV_fBodBodGyroJrkMag_mean"		- radians / second
+"80" "AV_fBodBodGyroJrkMag_std"			- radians / second
+"81" "AV_fBodBodGyroJrkMag_meanFreq"		- radians / second
+"82" "AV_angOf_tBodAcMean.grvMean"		- Gravity Units (g)
+"83" "AV_angOf_tBodAcJrkMean.grvMean"		- Gravity Units (g)
+"84" "AV_angOf_tBodGyroMean.grvMean"		- radians / second
+"85" "AV_angOf_tBodGyroJrkMean.grvMean"	- radians / second
+"86" "AV_angOf_X.grvMean"				- radians
+"87" "AV_angOf_Y.grvMean"				- radians
+"88" "AV_angOf_Z.grvMean"				- radians
